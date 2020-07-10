@@ -1,5 +1,145 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "menu";
 @import "variables";
 @import "colors";
-@import "global";
 @import "typography";
-@import "../../node_modules/bootstrap/dist/scss/bootstrap.scss";
+@import "global";
+%socials{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            float: left;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+header{
+    @media #{$mq-620-down}{
+        padding: 20px 0;
+    }
+    .menu{
+        padding: 20px 0;
+    }
+    .logo{
+        @media #{$mq-620-down}{
+            flex: 100%;
+            max-width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    
+    .main-menu{
+        .nav{
+            @media #{$mq-620-down}{
+               display: none !important;
+            }
+        }
+        .socials {
+            @extend %socials;
+        }
+    }
+}
+main {
+    width: 100%;
+    .main-background{
+        background-image: url(../images/background-roki.png);
+        background-size: cover;
+        background-position: -180px;
+        background-repeat: no-repeat;
+        @media #{$mq-620-up}{
+            background-position: 50%;
+            height: 520px;
+            background-position-y: inherit;
+        }
+        .responsive-main-txt{
+            padding: 20px 110px 0 20px;
+            p{
+                text-shadow: 1px 1px 2px #000;
+                color: #fff;
+            }
+            @media #{$mq-620-up}{
+                padding: 100px 59% 0 40px;
+                p{
+                    text-shadow: none;
+                }
+            }
+        }
+        .responsive-main-title{
+            padding: 20px 110px 20px 20px;
+            h2{
+                color: #fff;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px #000;
+            }
+            @media #{$mq-620-up}{
+                padding: 30px  45% 0 40px;
+                h2{
+                    font-size: 30px;
+                    font-weight: 300;
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+    .main-aside{
+        background: linear-gradient(0deg, rgba(194,102,102,1) 0%, rgba(255,255,255,1) 100%);
+        margin-top: 30px;
+        p{
+            font-size: 1.3rem;
+            color: $dkvine;
+            padding: 0 10px 0 0;
+        }
+        div{
+            padding-bottom: 35px;
+        }
+        span{
+            color: $ltvine;
+            margin: 5px 0;
+            display: inline-block;
+        }
+        h4{
+            margin-bottom: 0;
+        }
+        .aside-title{
+            h4{
+                color: $dkvine;
+                font-weight: 500;
+            }
+            span{
+                color: $dkvine;
+            }
+        }
+        .aside-link{
+            span{
+                color: $dkvine;
+            }
+            a{
+                color: $white;
+            }
+        }
+    }
+    .main-content{
+        padding: 25px 0;
+    }
+}
+footer{
+    background-color: #eed5d0;
+    text-align: center;
+    .socials {
+        @extend %socials;
+    }
+    span {
+        display: block;
+        padding: 20px 0;
+    }
+    .logo, .logo-text{
+        text-align: center;
+    }
+}

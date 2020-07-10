@@ -4,31 +4,30 @@ html {
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;   
+    box-sizing: border-box;   
+    list-style-type: none;
 }
 
 body {
-    padding: 20px;
-    background-color: $ltGray;
+    padding: 0;
+    background-color: $white;
     color: $black;
     font-family: 'Roboto', sans-serif;
     line-height: 1.3;
-
     @media #{$mq-1000-up}{
-        padding: 1.5rem;
+        padding: 0;
     }
 }
 
 main {
-    padding: 20px;
+    padding: 0;
     background-color: $white;
-    border-radius: 15px;
-    max-width: 1200px;
+    border-radius: 0;
     margin: 0 auto;
 
     @media #{$mq-1000-up}{
-        display: flex;
-        padding: 1.5rem;
+        display: block;
+        padding: 0;
     }
 }
 
