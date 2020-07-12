@@ -4,7 +4,8 @@
 @import "colors";
 @import "typography";
 @import "global";
-
+@import "header";
+@import "footer";
 %socials{
     flex-direction: row;
     justify-content: center;
@@ -20,33 +21,7 @@
 }
 
 
-header{
-    @media #{$mq-620-down}{
-        padding: 20px 0;
-    }
-    .menu{
-        padding: 20px 0;
-    }
-    .logo{
-        @media #{$mq-620-down}{
-            flex: 100%;
-            max-width: 100%;
-            text-align: center;
-            padding-bottom: 20px;
-        }
-    }
-    
-    .main-menu{
-        .nav{
-            @media #{$mq-620-down}{
-               display: none !important;
-            }
-        }
-        .socials {
-            @extend %socials;
-        }
-    }
-}
+
 main {
     width: 100%;
     .content-main{
@@ -100,39 +75,7 @@ main {
         background: linear-gradient(0deg, rgba(194,102,102,1) 0%, rgba(255,255,255,1) 100%);
         margin-top: 30px;
         p{
-            font-size: 1.2rem;
-            color: $dkvine;
             padding: 0 10px 0 0;
-        }
-        span{
-            color: $ltvine;
-            margin: 5px 0;
-            display: inline-block;
-        }
-        h4{
-            margin-bottom: 0;
-        }
-        .aside-title{
-            h4{
-                color: $dkvine;
-                font-weight: 500;
-            }
-            .aside-title-size{
-                @media #{$mq-620-up}{
-                    font-size: 2rem;
-                }
-            }
-            span{
-                color: $dkvine;
-            }
-        }
-        .aside-link{
-            span{
-                color: $dkvine;
-            }
-            a{
-                color: $white;
-            }
         }
         @media #{$mq-620-up}{
             margin: 70px 70px 0 70px;
@@ -142,36 +85,12 @@ main {
         padding: 30px 0 0 ;
         @media #{$mq-620-up}{
         padding: 90px 0 0 0;
-            h4{
-                font-size: 1.8rem;
-            }
             .main-content-text{
                 margin-left: 30px;
                 p{
                     margin: 10px 0 90px 60px;
                 }
-                .m-bottom-zero{
-                    margin-bottom: 0;
-                }
             }
         }
-    }
-}
-footer{
-    background-color: #eed5d0;
-    text-align: center;
-    
-    @media #{$mq-620-up}{
-        padding: 40px 0 20px 0;
-    }
-    .socials {
-        @extend %socials;
-    }
-    span {
-        display: block;
-        padding: 20px 0;
-    }
-    .logo, .logo-text{
-        text-align: center;
     }
 }

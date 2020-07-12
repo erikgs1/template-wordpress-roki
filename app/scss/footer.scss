@@ -1,0 +1,19 @@
+
+footer{
+    background-color: #eed5d0;
+    text-align: center;
+    
+    @media #{$mq-620-up}{
+        padding: 40px 0 20px 0;
+    }
+    .socials {
+        @extend %socials;
+    }
+    span {
+        display: block;
+        padding: 20px 0;
+    }
+    .logo, .logo-text{
+        text-align: center;
+    }
+}

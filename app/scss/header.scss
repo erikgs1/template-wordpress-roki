@@ -1,0 +1,27 @@
+header{
+    @media #{$mq-620-down}{
+        padding: 20px 0;
+    }
+    .menu{
+        padding: 20px 0;
+    }
+    .logo{
+        @media #{$mq-620-down}{
+            flex: 100%;
+            max-width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    
+    .main-menu{
+        .nav{
+            @media #{$mq-620-down}{
+               display: none !important;
+            }
+        }
+        .socials {
+            @extend %socials;
+        }
+    }
+}

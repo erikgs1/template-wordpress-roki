@@ -31,12 +31,34 @@ h4 {
     color: $ltvine;
     font-weight: 400;
     @media #{$mq-620-up}{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 }
-
+.head-4-2{
+    font-size: 2rem;
+    color: $dkvine;
+    font-weight: 500;
+}
 h6{
     font-size: 0.9rem;
     color: $dkvine;
     font-weight: 500;
+}
+
+span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: $ltvine;
+    line-height: 2;
+}
+.p-dk{
+    font-size: 1.2rem;
+    color: $dkvine;
+}
+.span-2{
+    color: $dkvine;
+    line-height: normal;
+}
+a {
+    color: $white;
 }
