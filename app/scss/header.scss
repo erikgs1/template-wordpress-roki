@@ -1,3 +1,11 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "menu";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "global";
+@import "dynamic";
+
 header{
     @media #{$mq-620-down}{
         padding: 20px 0;

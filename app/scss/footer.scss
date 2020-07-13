@@ -1,8 +1,14 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "menu";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "global";
+@import "dynamic";
 
 footer{
     background-color: #eed5d0;
     text-align: center;
-    
     @media #{$mq-620-up}{
         padding: 40px 0 20px 0;
     }
