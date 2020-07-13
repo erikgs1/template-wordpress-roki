@@ -19,7 +19,7 @@ main {
     .main-background{
         background-image: url(../images/background-roki.jpg);
         background-size: cover;
-        background-position: -180px;
+        background-position: 80%;
         background-repeat: no-repeat;
         @media #{$mq-620-up}{
             background-position: 50%;

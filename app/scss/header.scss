@@ -7,14 +7,14 @@
 @import "dynamic";
 
 header{
-    @media #{$mq-620-down}{
+    @media #{$mq-620-up}{
         padding: 20px 0;
     }
     .menu{
         padding: 20px 0;
     }
     .logo{
-        @media #{$mq-620-down}{
+        @media #{$mq-620-up}{
             flex: 100%;
             max-width: 100%;
             text-align: center;
@@ -23,9 +23,23 @@ header{
     }
     
     .main-menu{
-        .nav{
-            @media #{$mq-620-down}{
-               display: none !important;
+        nav{
+            width: 100%;
+            @media #{$mq-620-up}{
+                border: 1px solid;
+                ul{
+                    float: left;
+                    li{
+                        float: left;
+                        a{
+                            display: block;
+                            border: 1px solid;
+                        }
+                    }
+                }
+                .sub-menu{
+                    display: none;
+                }
             }
         }
         .socials {

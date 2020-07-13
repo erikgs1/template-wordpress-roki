@@ -15,6 +15,9 @@ footer{
     .socials {
         @extend %socials;
     }
+    .socials-left {
+        @extend %socials-left;
+    }
     span {
         display: block;
         padding: 20px 0;
