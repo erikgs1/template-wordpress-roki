@@ -100,3 +100,12 @@ main {
         left: 0;
     }
 }
+.fundadoras {
+    background-image: url(../images/background-fundadoras.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @media #{$mq-620-down}{
+        background-size: cover;
+        background-position: center;
+    }
+}
