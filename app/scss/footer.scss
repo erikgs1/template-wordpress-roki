@@ -9,6 +9,9 @@
 footer{
     background-color: #eed5d0;
     text-align: center;
+    float: left;
+    width: 100%;
+    
     @media #{$mq-620-up}{
         padding: 40px 0 20px 0;
     }

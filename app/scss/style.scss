@@ -10,6 +10,8 @@
 
 main {
     width: 100%;
+    float: left;
+    
     .content-main{
         margin-bottom: 30px;
         @media #{$mq-620-up}{
@@ -82,13 +84,19 @@ main {
 }
 .nossa-historia{
     background-image: url(../images/background-nossa-historia.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    .main-content-text{
-        margin: 0;
-        p{
-            margin: 0 !important;
-            line-height: 1.5;
+    @media #{$mq-620-down}{
+        background-size: cover;
+        background-position: center;
+    }
+    ul{
+        li{
+            list-style-type: disc;
+            padding-left: 5px;
         }
+    }
+    .main-content{
+        padding-right: 30px;
     }
 }

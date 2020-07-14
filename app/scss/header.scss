@@ -5,11 +5,18 @@
 @import "typography";
 @import "global";
 @import "dynamic";
+@import "mixins";
 
 header{
     @media #{$mq-620-up}{
         padding: 20px 0;
     }
+
+    display: block;
+    float: left; 
+    width: 100%;
+    height: 150px;
+
     .menu{
         padding: 20px 0;
     }
@@ -21,27 +28,71 @@ header{
             padding-bottom: 20px;
         }
     }
-    
-    .main-menu{
-        nav{
-            width: 100%;
-            @media #{$mq-620-up}{
-                border: 1px solid;
-                ul{
-                    float: left;
-                    li{
-                        float: left;
-                        a{
-                            display: block;
-                            border: 1px solid;
+
+    .main-menu{  
+        position: relative; 
+
+        .ul{  position: relative;
+            float: right;
+            height: 35px;
+
+            li{  
+                float: left;
+                position: relative;  
+               
+                a{
+                    display: inline-block;                            
+                    min-height: 35px;
+                    line-height: 35px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding: 0 15px;
+                }
+
+                &:hover {
+                    .sub-menu{
+                     display: block                    
+                    }
+                    &.sindrome {                        
+                        .sub-menu{
+                            min-width: 230px;               
                         }
                     }
                 }
-                .sub-menu{
+
+                .sub-menu{ 
+                    @include transition(all .2s ease);
+        
                     display: none;
+                    min-width: 156px;
+                    background: $corSubmenu;
+                    padding: 20px;
+                    left: 7px;
+                    top: 30px;
+                    position: absolute;
+                    z-index: 2;        
+        
+                    a {
+                        display: inline-block;  
+                        width: 100%;
+                        float: left;  
+                        text-decoration: none;
+                        min-height: 17px;
+                        line-height: 17px;
+                        padding-left: 0;
+                        padding-right: 0;
+                        margin-bottom: 10px; 
+                        &:last-child { 
+                            margin-bottom: 0;
+                        }
+                    }                        
+        
                 }
+        
             }
         }
+   
+
         .socials {
             @extend %socials;
         }
