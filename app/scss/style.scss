@@ -90,13 +90,13 @@ main {
         background-size: cover;
         background-position: center;
     }
-    ul{
-        li{
-            list-style-type: disc;
-            padding-left: 5px;
-        }
-    }
     .main-content{
         padding-right: 30px;
+    }
+    .disc-li::before{
+        content: "•";
+        color: $ltvine;
+        position: absolute;
+        left: 0;
     }
 }
