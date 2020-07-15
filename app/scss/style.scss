@@ -119,3 +119,20 @@ main {
         @extend %disc;
     }
 }
+.tratamentos{
+    .main-background{
+        background-image: url(../images/roki-tratamentos.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        @media #{$mq-620-up}{
+            min-height: 600px;
+        }
+    }
+    .disc{
+        @extend %disc;
+        padding-left: 15px;
+    }
+    .disc::before{
+        padding-left: 10px;
+    }
+}
