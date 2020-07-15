@@ -93,11 +93,8 @@ main {
     .main-content{
         padding-right: 30px;
     }
-    .disc-li::before{
-        content: "•";
-        color: $ltvine;
-        position: absolute;
-        left: 0;
+    .disc-li{
+        @extend %disc;
     }
 }
 .fundadoras {
@@ -107,5 +104,18 @@ main {
     @media #{$mq-620-down}{
         background-size: cover;
         background-position: center;
+    }
+}
+.sobre-a-sindrome{
+    .main-background{
+        background-image: url(../images/roki-sobre-a-sindrome.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        @media #{$mq-620-up}{
+            min-height: 600px;
+        }
+    }
+    .disc{
+        @extend %disc;
     }
 }
