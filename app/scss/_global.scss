@@ -48,3 +48,9 @@ aside {
 .paddingo-b-aside{
  padding-bottom: 35px;
 }
+
+.dn620{
+    @media#{$mq-620-down}{
+        display: none;
+    }
+}
