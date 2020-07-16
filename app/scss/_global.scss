@@ -54,3 +54,8 @@ aside {
         display: none;
     }
 }
+.p-0-620{
+    @media#{$mq-620-down}{
+        padding: 0;
+    }
+}
