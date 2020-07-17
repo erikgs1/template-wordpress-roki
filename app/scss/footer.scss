@@ -8,12 +8,12 @@
 
 footer{
     background-image: url(../images/roki-rodape.jpg);
-    text-align: center;
+    text-align: left;
     float: left;
     width: 100%;
     margin-top: 3rem;
     @media #{$mq-620-up}{
-        padding: 40px 0 20px 0;
+        padding: 60px 0 30px 0;
     }
     .socials {
         @extend %socials;
@@ -28,4 +28,7 @@ footer{
     .logo, .logo-text{
         text-align: center;
     }
+}
+.footer-guia{
+    margin-top: 0;
 }

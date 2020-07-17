@@ -1,3 +1,61 @@
+@font-face {
+    font-family: "asap-medium";
+    src: url("../../fontes/Asap-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "asap-medium-italic";
+    src: url("../fontes/Asap-MediumItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "asap-regular";
+    src: url("../fontes/Asap-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "asap-bold";
+    src: url("../fontes/Asap-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "asap-semi-bold";
+    src: url("../fontes/Asap-SemiBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "asap-bold-italic";
+    src: url("../fontes/Asap-BoldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "asap-semi-bold-italic";
+    src: url("../fontes/Asap-SemiBoldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "asap-italic";
+    src: url("../fontes/Asap-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 h1, h2, h3 {
     font-weight: 700;
     margin-top: 0px;
@@ -82,4 +140,12 @@ a {
     a{
         color: $dkvine
     }
+}
+.a-ltvine{
+    a{
+        color: $ltvine
+    }
+}
+.bold{
+    font-weight: bold;
 }

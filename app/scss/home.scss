@@ -1,0 +1,22 @@
+.home{
+    .main-content{
+        padding: 6rem 0 0 6rem;
+        font-family: "asap-italic";
+        .main-content-text {
+            h2, h3, h4{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+    .main-content-mancha-1::before{
+        content: "../images/roki-home-mancha1.jpg";
+        background-image: url();
+        background-repeat: no-repeat;
+    }
+    .main-content-mancha-2::before{
+        background-image: url(../images/roki-home-mancha2.jpg);
+    }
+    .main-content-mancha-3::before{
+        background-image: url(../images/roki-home-mancha3.jpg);
+    }
+}

@@ -21,10 +21,10 @@ header{
         padding: 20px 0;
     }
     .logo{
+        text-align: center;
         @media #{$mq-620-up}{
             flex: 100%;
             max-width: 100%;
-            text-align: center;
             padding-bottom: 20px;
         }
     }
