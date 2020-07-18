@@ -1,0 +1,19 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "global";
+@import "dynamic";
+
+.sobre-a-sindrome{
+    .main-background{
+        background-image: url(../images/roki-sobre-a-sindrome.jpg);
+        background-repeat: no-repeat;
+        @media #{$mq-620-up}{
+            min-height: 600px;
+        }
+    }
+    .disc{
+        @extend %disc;
+    }
+}

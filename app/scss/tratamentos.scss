@@ -1,0 +1,25 @@
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "global";
+@import "dynamic";
+.tratamentos{
+    .main-background{
+        background-image: url(../images/roki-tratamentos.jpg);
+        background-repeat: no-repeat;
+        @media #{$mq-620-up}{
+            min-height: 600px;
+            background-size: 100%;
+            
+        }
+    }
+    .disc{
+        @extend %disc;
+        padding-left: 15px;
+    }
+    .disc::before{
+        padding-left: 10px;
+    }
+}

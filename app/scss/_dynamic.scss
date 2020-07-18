@@ -24,4 +24,7 @@
     color: $ltvine;
     position: absolute;
     left: 0;
+    @media #{$mq-620-down}{
+        left: 15px;
+    }
 }

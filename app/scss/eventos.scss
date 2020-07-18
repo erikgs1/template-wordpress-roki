@@ -1,0 +1,19 @@
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "global";
+@import "dynamic";
+.eventos{
+    .event-border-b{
+        border-bottom: 1px $ltvine solid;
+    }
+    background-image: url(../images/background-fundadoras.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @media #{$mq-620-up}{
+        background-size: cover;
+        background-position: center;
+    }
+}

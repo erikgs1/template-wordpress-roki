@@ -1,0 +1,18 @@
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "global";
+@import "dynamic";
+.guia{
+    background-image: url(../images/background-fundadoras.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 480px;
+    @media #{$mq-620-up}{
+        background-size: cover;
+        background-position: center;
+    }
+}
