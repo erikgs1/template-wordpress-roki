@@ -8,9 +8,16 @@
 .sobre-a-sindrome{
     .main-background{
         background-image: url(../images/roki-sobre-a-sindrome.jpg);
+        background-size: 100%;
         background-repeat: no-repeat;
-        @media #{$mq-620-up}{
-            min-height: 600px;
+        @media #{$mq-620-down}{
+            background-size: cover;
+            background-position: center;
+        }
+        img{
+            @media #{$mq-620-down}{
+                width: 100%;
+            }
         }
     }
     .disc{

@@ -6,8 +6,12 @@
 @import "global";
 @import "dynamic";
 .eventos{
+    .margin-left{
+        margin-left: 15px;
+    }
     .event-border-b{
         border-bottom: 1px $ltvine solid;
+        padding: 5px 0;
     }
     background-image: url(../images/background-fundadoras.jpg);
     background-size: 100%;
@@ -15,5 +19,8 @@
     @media #{$mq-620-up}{
         background-size: cover;
         background-position: center;
+        img{
+            margin-top: 10px !important;
+        }
     }
 }
