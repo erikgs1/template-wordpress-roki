@@ -14,42 +14,42 @@ var app = {};
 // })
 
 
-function resizer(media) {
-    jQuery('body').removeClass(function (index, className) {
-        return (className.match (/(^|\s)wmedia-\S+/g) || []).join(' ');
-    });
+// function resizer(media) {
+//     jQuery('body').removeClass(function (index, className) {
+//         return (className.match (/(^|\s)wmedia-\S+/g) || []).join(' ');
+//     });
     
-    jQuery('body').addClass('wmedia-'+jQuery(window).width());
+//     jQuery('body').addClass('wmedia-'+jQuery(window).width());
 
-}
+// }
 
-function resposiveMenuOpen() { console.log(' resposiveMenuOpen');
-    jQuery('body').addClass('menu-active');
-    jQuery('.open-menu-hamburger').hide();
-    jQuery('.close-menu-hamburger').show();
-}
-function resposiveMenuClose() { console.log('resposiveMenuClose');
-   jQuery('body').removeClass('menu-active');
-   jQuery('.open-menu-hamburger').show();
-   jQuery('.close-menu-hamburger').hide();
-}
+// function resposiveMenuOpen() { console.log(' resposiveMenuOpen');
+//     jQuery('body').addClass('menu-active');
+//     jQuery('.open-menu-hamburger').hide();
+//     jQuery('.close-menu-hamburger').show();
+// }
+// function resposiveMenuClose() { console.log('resposiveMenuClose');
+//    jQuery('body').removeClass('menu-active');
+//    jQuery('.open-menu-hamburger').show();
+//    jQuery('.close-menu-hamburger').hide();
+// }
 
-jQuery(window).resize(function() {
-    resizer()
-});
+// jQuery(window).resize(function() {
+//     resizer()
+// });
 
-jQuery('.open-menu-hamburger ').on('click', function() {
-    resposiveMenuOpen();
-});
-jQuery('.close-menu-hamburger ').on('click', function() {
-    resposiveMenuClose();
-});
+// jQuery('.open-menu-hamburger ').on('click', function() {
+//     resposiveMenuOpen();
+// });
+// jQuery('.close-menu-hamburger ').on('click', function() {
+//     resposiveMenuClose();
+// });
 
-jQuery('.main-menu .ul > li').on('click', function() {
-   //openSubMenu();
-   jQuery('.sub-menu').hide();
-   jQuery(this).find('.sub-menu').show();
-});
+// jQuery('.main-menu .ul > li').on('click', function() {
+//    //openSubMenu();
+//    jQuery('.sub-menu').hide();
+//    jQuery(this).find('.sub-menu').show();
+// });
 
 // Media Queries
 // $mq-620-down: "only screen and (max-width: 620px)";

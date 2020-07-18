@@ -9,9 +9,12 @@
     <meta name="theme-color" content="#1843c1" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
     <title>Instituto Roki</title>
-    <link rel="stylesheet" href="dist/style.css?cb=1595048929338">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="dist/style.css?cb=1595051150095">
+    <link rel="stylesheet" type="text/css" href="app/responsive-menu/css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="app/responsive-menu/css/component.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="app/responsive-menu/js/modernizr.custom.js"></script>
 </head>
 <body class="home">
     <header>
@@ -22,11 +25,10 @@
                         <img src="images/logo-roki.png" alt="">
                     </div>
                     <div class="menu-hamburger float-right">
-                        <span class="open-menu-hamburger">Open</span>
-                        <span class="close-menu-hamburger"></span>
+                        <p><a href="#" id="trigger" class="menu-trigger">Open/Close Menu</a></p>
                     </div>
                 </div>
-                <div  class="col-md">
+                <div  class="col-md-10">
                     <div class="main-menu">
                       
                         <div class="socials d-flex flex-row-reverse">
@@ -100,6 +102,87 @@
             </div>
         </section>
     </header>
+    <!-- menu mobile -->
+	<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+                <nav id="mp-menu" class="mp-menu">
+                    <div class="mp-level">
+                    
+                        <ul>
+                            <li class="icon icon-arrow-right">								
+                                <a href="#">Instituto Roki <i class="fas fa-arrow-right"></i></a>
+                                <div class="mp-level">									
+                                    <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
+                                    <ul>
+                                        <li>
+                                            <a  href="#">Nossa história</a>
+                                            <a  href="#">Fundadoras</a>										
+                                        </li>	
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="icon icon-arrow-right">
+                                <a href="#">Síndrome de Rokitansky <i class="fas fa-arrow-right"></i></a>
+                                <div class="mp-level">
+                                    
+                                    <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar</a>
+                                    <ul>
+                                        <li><a href="#">Sobre a Síndrome</a></li>
+                                        <li><a href="#">Tratamentos</a></li>
+                                        <li><a href="#">Vida sexual e maternidade</a></li>
+                                        <li><a href="#">Eventos</a></li> 
+                                        <li><a href="#">Artigos</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="icon icon-arrow-right">
+                                <a href="#">Mulheres <i class="fas fa-arrow-right"></i></a>
+                                <div class="mp-level">
+                                    
+                                    <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
+                                    <ul>
+                                        <li><a href="#">Para Mulheres</a></li>
+                                        <li><a href="#">Guia</a></li>
+                                        <li><a href="#">Relatos</a></li>
+                                        <li><a href="#">Para saber mais</a></li>                                      
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="icon icon-arrow-right">
+                                <a  href="#">Familiares <i class="fas fa-arrow-right"></i></a>
+                                <div class="mp-level">
+                                    
+                                    <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
+                                    <ul>
+                                        <li><a href="#">Para Familiares</a></li>
+                                        <li><a href="#">Guia</a></li>
+                                        <li><a href="#">Relatos</a></li>
+                                        <li><a href="#">Para saber mais</a></li>                                      
+                                    </ul>
+                                
+                                </div>
+                            </li>
+                            <li class="icon icon-arrow-right">
+                                <a  href="#">Profissionais de Saúde <i class="fas fa-arrow-right"></i></a>
+                                <div class="mp-level">
+                                    <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
+                                    <ul>
+                                        <li><a href="#">Para profissionais de saúde</a></li>
+                                        <li><a href="#">Guia</a></li>
+                                        <li><a href="#">Instituições e profissionais</a></li>
+                                                                        
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li><a  href="#">Fale Conosco</a></li>
+                        </ul>
+                            
+                    </div>
+                </nav>	
+
+</div>							
+                <!-- /menu mobile -->
     <main>
         <!-- div 1 - Background -->
         <div  class="main-background">
@@ -243,7 +326,14 @@
             </div>
         </div>
     </footer>
-    <script src="dist/all.js?cb=1595048929338"></script>
-
+    <script src="app/responsive-menu/js/classie.js"></script>
+	<script src="app/responsive-menu/js/mlpushmenu.js"></script>
+    <script src="dist/all.js?cb=1595051150095"></script>
+	
+	<script>
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+				type : 'cover'
+			} );
+		</script>
 </body>
 </html>

@@ -16,10 +16,6 @@ header{
     float: left; 
     width: 100%;
     height: 150px;
-
-    .menu{
-        padding: 20px 0;
-    }
     .logo{
         text-align: center;
         @media #{$mq-620-up}{
@@ -28,6 +24,4 @@ header{
             padding-bottom: 20px;
         }
     }
-
-    
 }
