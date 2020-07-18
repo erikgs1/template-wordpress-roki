@@ -52,7 +52,7 @@ aside {
 
 .dn620{
     @media#{$mq-620-down}{
-        display: none;
+        display: none !important;
     }
 }
 .db620{

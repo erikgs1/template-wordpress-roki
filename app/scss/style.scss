@@ -63,6 +63,10 @@ main {
         @media #{$mq-620-up}{
             padding: 4.3rem 3.8rem 0 1.5rem;
         }
+        @media #{$mq-620-down}{
+            background-size: cover;
+            padding: 0 20px;
+        }
     }
     .main-content{
         padding: 30px 0 0 ;
@@ -74,6 +78,9 @@ main {
                     margin: 10px 0 70px 60px;
                 }
             }
+        }
+        @media #{$mq-620-down}{
+            padding: 3rem 1rem 0 1rem !important; 
         }
     }
 }

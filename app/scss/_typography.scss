@@ -108,7 +108,9 @@ h6{
     color: $dkvine;
     font-weight: 500;
 }
-
+.dkvine{
+    color: $dkvine;
+}
 span{
     font-size: 1rem;
     font-weight: 500;
@@ -123,12 +125,15 @@ span{
     font-size: 1.2rem;
     color: $ltvine;
 }
+
 .ps{
     font-size: 0.9rem;
 }
+
 .ps-2{
     font-size: 0.8rem;
 }
+
 .span-2{
     color: $dkvine;
     line-height: normal;
@@ -147,5 +152,8 @@ a {
     }
 }
 .bold{
-    font-weight: bold;
+    font-family: "asap-bold";
+}
+.semi-bold{
+    font-family: "asap-semi-bold";
 }
