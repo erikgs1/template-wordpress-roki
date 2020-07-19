@@ -17,10 +17,13 @@
         padding-right: 30px;
     }
     .disc-li{ 
-        @media #{$mq-620-down}{
-            margin-left: 15px;
-        }
+        margin-left: 15px;
         @extend %disc;
-       
+    }
+    %disc::before{
+        margin-left: 15px;
+        @media #{$mq-620-down}{
+            margin-left: 0;
+        }
     }
 }
