@@ -175,6 +175,8 @@
 			// increment level depth
 			++this.level;
 
+			jQuery('body').addClass('menu-active');
+
 			// move the main wrapper
 			var levelFactor = ( this.level - 1 ) * this.options.levelSpacing,
 				translateVal = this.options.type === 'overlap' ? this.el.offsetWidth + levelFactor : this.el.offsetWidth;
@@ -202,6 +204,7 @@
 		},
 		// close the menu
 		_resetMenu : function() {
+			jQuery('body').removeClass('menu-active');
 			this._setTransform('translate3d(0,0,0)');
 			this.level = 0;
 			// remove class mp-pushed from main wrapper

@@ -1,11 +1,47 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "colors";
+@import "typography";
+@import "global";
+@import "dynamic";
 .home{
+    .mobile{
+        display: none;
+        @media #{$mq-620-down}{
+            display: block;
+        }
+    }
+    .desktop{
+        @media #{$mq-620-down}{
+            display: none;
+        }
+    }
     .main-background{
-        background-position: 50% 50%;
-        min-height: 460px;
+        @media #{$mq-620-down}{
+            min-height: 300px;
+            background-size: cover;
+            background-position: 80%;
+            background-repeat: no-repeat;
+            img{
+                display: none;
+            }
+        }
+        text-align: center;
+        position: relative;
+        .absolute-text{
+            position: absolute;
+            top: 50px;
+            @media #{$mq-620-down}{
+                top: 0;
+            }
+            left: 0;
+            width: 100%;
+            text-align: left;
+        }
     }
     .main-content{
         padding: 6rem 0 0 6rem;
-        font-family: "asap-italic";
+        font-style: italic;
         .main-content-text {
             position: relative;
             h2, h3, h4{

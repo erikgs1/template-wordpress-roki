@@ -164,6 +164,7 @@
   .ul{  position: relative;
       float: right;
       height: 35px;
+      margin-top: 10px;
 
       @media #{ $mq-1000-down } {
         
@@ -187,6 +188,14 @@
 
          z-index: 10;
 
+         display: none !important;
+
+      }
+      .icon:before {
+        display: none;
+        @media #{ $mq-1000-down } {              
+          display: inline-block;
+        }
       }
 
       li{  
@@ -207,16 +216,24 @@
               padding: 0 15px;
           }
 
+          i {
+            display: none;
+            @media #{ $mq-1000-down } {              
+              display: inline-block;
+            }
+          }
+
           &:hover {
-              .sub-menu{
+              .sub-menu, .mp-level{
                display: block                    
               }
               &.sindrome {                        
-                  .sub-menu{
+                  .sub-menu, .mp-level{
                       min-width: 230px;               
                   }
               }
           }
+       
 
           .sub-menu{ 
               @include transition(all .2s ease);
@@ -292,15 +309,118 @@
   z-index: 5;
   display: none;
 }
+.menu-responsive-trigger {
+  border: 1px solid red;
+  position: fixed;
+  top: 56px;
+  right: 14px;
+  //right: calc(~"100vh - 20px");  
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+ 
+}
 
-
-.menu-hamburger {
+.mp-pusher {
   position: relative;
+  z-index: 2;
+}
+.menu-hamburger { 
+  width: 40px;
+  position: relative;
+  margin-top: 54px;
+  
   .close-menu-hamburger {
     display: none;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 20;
+  }
+
+  .ham {  
+    width: 40px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+   
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-width: 3;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+   
+}
+
+body.menu-active {
+  .hamRotate {
+    transform: rotate(45deg);
+ 
+  }
+  .hamRotate180 {
+    transform: rotate(180deg);
+  }
+
+  .ham1 .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1 .bottom {
+    stroke-dashoffset: -138px;
+  }
+}
+
+
+.mp-menu {
+  @media #{ $mq-1000-up } {    
+    display: none;
+  }
+  
+  .menu-hamburger {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    display: none;
+  }
+}
+
+body.menu-active {
+  .mp-menu {
+    .menu-hamburger { 
+      display: block;
+    }
+  }
+
+  .menu-responsive-trigger {
+   // right: calc(100vw - 50px);
+  }
+
+  .menu-hamburger .ham {
+    //right: calc(100vw - 60px);
   }
 }

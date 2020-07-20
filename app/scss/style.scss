@@ -27,15 +27,6 @@ main {
         }
     }
     .main-background{
-        background-image: url(../images/background-roki.jpg);
-        background-size: cover;
-        background-position: 80%;
-        background-repeat: no-repeat;
-        @media #{$mq-620-up}{
-            background-position: 50%;
-            min-height: 520px;
-            background-position-y: inherit;
-        }
         .main-txt{
             p{
                 text-shadow: 1px 1px 2px #000;

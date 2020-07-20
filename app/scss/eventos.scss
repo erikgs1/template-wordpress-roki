@@ -16,6 +16,9 @@
     background-image: url(../images/background-fundadoras.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    img{
+        border: 2px solid #ccc;
+    }
     @media #{$mq-620-up}{
         background-size: cover;
         background-position: center;
