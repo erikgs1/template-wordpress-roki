@@ -5,17 +5,7 @@
 @import "global";
 @import "dynamic";
 .home{
-    .mobile{
-        display: none;
-        @media #{$mq-620-down}{
-            display: block;
-        }
-    }
-    .desktop{
-        @media #{$mq-620-down}{
-            display: none;
-        }
-    }
+    
     .main-background{
         @media #{$mq-620-down}{
             min-height: 300px;
@@ -80,6 +70,27 @@
             span{
                 background-image: url(../images/roki-home-mancha3.jpg);
             }
+        }
+    }
+    .mobile{
+        display: none;
+        @media #{$mq-620-down}{
+            display: block;
+        }
+        text-align: left;
+        position: static;
+        .main-txt{
+            max-width: 70%;
+        }
+        .main-title{
+            max-width: 70%;
+            padding-bottom: 2rem;
+        }
+        
+    }
+    .desktop{
+        @media #{$mq-620-down}{
+            display: none;
         }
     }
 }
