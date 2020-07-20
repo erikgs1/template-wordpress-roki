@@ -26,6 +26,11 @@ header{
             padding-bottom: 20px;
             text-align: left;
         }
+        @media #{$mq-620-down}{
+            img{
+                margin-left: 40px;
+            }
+        }
     }
     .pipe::after{
         content: "";

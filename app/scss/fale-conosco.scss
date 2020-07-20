@@ -7,6 +7,12 @@
 @import "global";
 @import "dynamic";
 
+.main-content-text{
+    h4{
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+}
 .ul-aside-contato{
     margin-top: 6rem;
     background-image: url(../images/roki-boxe-contato.jpg);

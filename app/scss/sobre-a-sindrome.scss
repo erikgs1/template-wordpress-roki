@@ -6,6 +6,20 @@
 @import "dynamic";
 
 .sobre-a-sindrome{
+    main{
+        ul{
+            padding-left: 15px;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        ul li:before {
+            content: '\2022';
+            position: absolute;
+            margin-left: -15px;
+            color: $ltvine;
+           }
+    }
     .main-background{
         background-image: url(../images/roki-sobre-a-sindrome.jpg);
         background-position: top;
@@ -20,6 +34,7 @@
             }
         }
     }
+    
     .disc{
         @extend %disc;
     }
