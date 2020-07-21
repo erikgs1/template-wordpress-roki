@@ -34,7 +34,7 @@ h4 {
     color: $ltvine;
     font-weight: 400;
     @media #{$mq-620-up}{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }
 p{
@@ -55,6 +55,9 @@ p{
 }
 .head-4-5{
     font-size: 1.5rem;
+}
+.head-4-6{
+    font-size: 3rem;
 }
 h6{
     font-size: 0.9rem;

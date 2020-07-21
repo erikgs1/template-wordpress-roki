@@ -6,6 +6,7 @@
 @import "global";
 @import "dynamic";
 .tratamentos{
+    
     border: 1px solid;
     .main-background{
         background-image: url(../images/roki-tratamentos.jpg);
@@ -20,13 +21,22 @@
                 width: 100%;
             }
         }
-    }
-    p{
-        font-size: 0.9rem;
-        font-weight: 500;
+        ul{
+            padding-left: 15px;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        ul li:before {
+            content: '\2022';
+            position: absolute;
+            margin-left: -15px;
+            color: $ltvine;
+           }
     }
     h4{
         padding: 10px 0;
+        margin: 2rem 0;
     }
     .disc{
         @extend %disc;

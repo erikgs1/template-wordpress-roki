@@ -16,6 +16,9 @@
     .main-content{
         padding-right: 30px;
     }
+    h4{
+        margin: 2rem 0;
+    }
     .disc-li{ 
         margin-left: 15px;
         @extend %disc;
