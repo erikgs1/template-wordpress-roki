@@ -4,6 +4,7 @@
 @import "typography";
 @import "global";
 @import "dynamic";
+@import "helpers";
 @import "menu";
 @import "home";
 @import "tratamentos";
@@ -16,10 +17,11 @@
 @import "header";
 @import "footer";
 @import "fale-conosco";
+
 main {
     width: 100%;
     float: left;
-    
+    padding-bottom: 60px;
     .content-main{
         margin-bottom: 30px;
         @media #{$mq-620-up}{

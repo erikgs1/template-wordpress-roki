@@ -8,7 +8,7 @@
 .vida-sexual{
     .main-background{
         background-image: url(../images/roki-vida-sexual.jpg);
-        background-size: 100%;
+        background-position: top;
         background-repeat: no-repeat;
         @media #{$mq-620-down}{
             background-size: cover;

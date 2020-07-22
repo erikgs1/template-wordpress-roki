@@ -9,6 +9,7 @@
     background-image: url(../images/background-nossa-historia.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 3rem;
     @media #{$mq-620-down}{
         background-size: cover;
         background-position: center;

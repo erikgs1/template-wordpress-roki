@@ -5,6 +5,7 @@ $ltGray: #cecece;
 $dkvine: #65041d;
 $ltvine: #ba4547;
 $whitevine: #f4e4e1;
+$pinkvine: #c37080;
 $corSubmenu: #eac8c2;
 $corSubmenuHover: #f0dad7;
 
@@ -25,9 +26,12 @@ $corSubmenuHover: #f0dad7;
 }
 
 .c-ltvine{
-    color: $ltvine;
+    color: $ltvine !important;
 }
 
 .c-whitevine{
     color: $whitevine;
+}
+.c-pinkvine{
+    columns: $pinkvine;
 }

@@ -6,11 +6,9 @@
 @import "global";
 @import "dynamic";
 .tratamentos{
-    
-    border: 1px solid;
     .main-background{
         background-image: url(../images/roki-tratamentos.jpg);
-        background-size: 100%;
+        background-position: top;
         background-repeat: no-repeat;
         @media #{$mq-620-down}{
             background-size: cover;
@@ -37,12 +35,5 @@
     h4{
         padding: 10px 0;
         margin: 2rem 0;
-    }
-    .disc{
-        @extend %disc;
-        padding-left: 15px;
-    }
-    .disc::before{
-        padding-left: 15px;
     }
 }

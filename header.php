@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -9,14 +9,15 @@
     <meta name="theme-color" content="#1843c1" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
     <title>Instituto Roki</title>
-    <link rel="stylesheet" href="dist/style.css?cb=1595286766725">
+    <link rel="stylesheet" href="dist/style.css?cb=1595300405964">
     <link rel="stylesheet" type="text/css" href="app/responsive-menu/css/icons.css" />
 	<link rel="stylesheet" type="text/css" href="app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="app/responsive-menu/css/component.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="app/responsive-menu/js/modernizr.custom.js"></script>
+    <?php wp_head(); ?>
 </head>
-<body class="vida-sexual">
+<body <?php body_class(); ?>>
     <header>
         <section  class="menu container">
             <div class="row ">
@@ -198,107 +199,3 @@
                 </nav>	
             </div>
                 <!-- /menu mobile -->
-    <main class="main-background">
-        <div class="container"> 
-            <div class="row">
-                 <!-- Espaço em branco background -->
-                 <div class=" col-md-4">
-                </div>
-                <!-- // Espaço em branco background -->
-                <div class=" col-md-8">
-                    <div class="ml-0" >
-                        <div class="page-title">
-                            <h1>Vida sexual e maternidade</h1>
-                        </div>    
-                        <p>
-                            Toda mulher com Síndrome de Rokitansky pode ter uma vida sexual ativa. O conhecimento do
-                            próprio corpo é um passo importante para todas as mulheres conhecerem as sensações que lhes
-                            dão prazer. O relacionamento entre duas pessoas deve ser construído com as diversas formas de
-                            intimidade e de prazer, além da relação sexual vaginal. <br><br>
-                            
-                            Para a penetração vaginal, ao final ou durante o processo de dilatação terapêutica, o importante é
-                            a mulher entender a dor que faz parte do processo. Existe uma diferença entre a dor suportável e a
-                            dor que passa do seu limite, levando ao sofrimento físico e emocional exacerbado. Assim a mulher
-                            poderá conhecer mais uma forma de prazer, sem traumas.
-                        </p>
-                        <h4>Maternidade</h4>
-                        <p>
-                            Para as mulheres com ausência ou subdesenvolvimento uterino a gestação natural e fisiológica não
-                            e viável. Nesse caso, há outras possibilidades para as mulheres que quiserem viver a maternidade.<br><br>
-
-                            A gestação poderá ser feita por outra mulher, chamada de barriga solidária, após a fertilização in
-                            vitro dos óvulos da mulher com a síndrome e o esperma do parceiro ou doador. Dessa forma, o filho
-                            será geneticamente da mulher ou do casal. Segundo o Conselho Federal de Medicina, a doação
-                            temporária do útero só é possível por mulheres que possuem vínculo de parentesco de até 4º grau
-                            com o casal. Casos de barriga solidária por amigas ou conhecidas são possíveis apenas após
-                            autorização jurídica<br><br>
-
-                            A adoção sempre é recomendada para as mulheres que querem ser mãe, mas que não podem ou
-                            não desejam passar pela gestação. Os processos de adoção trazem histórias lindas para as famílias
-                            e para as crianças. O processo deve ser iniciado na vara da infância e juventude mais próxima da
-                            residência da futura mãe. O Instituto Roki, criado com o apoio jurídico do Machado Meyer, segue
-                            sua parceria com projetos para a facilitação de um processo que atualmente é longo e repleto de
-                            detalhes<br><br>
-
-                            O transplante uterino ainda é considerado uma opção experimental, devido sua alta complexidade.
-                            Foi realizado pela primeira vez na Suécia, em 2014, com doadora viva e, no Brasil, em 2016,
-                            com doadora falecida. O procedimento inicia com a fertilização in vitro e o congelamento dos
-                            embriões. Busca-se então uma doadora uterina que seja compatível, viva ou falecida. Então é feito o
-                            transplante. A mulher transplantada precisa utilizar medicações imunossupressoras durante vários
-                            meses para garantir que o corpo não rejeite o útero doado, e somente após esse período é feita a
-                            inseminação do embrião. O parto deverá ser cesariana e, se não houver complicações na gestação,
-                            a mulher transplantada poderá decidir se o útero será mantido para uma segunda gestação ou
-                            se deverá ser removido. Atualmente, o procedimento é indicado somente para mulheres não
-                            submetidas à neovaginoplastia cirúrgica prévia.<br><br>
-
-                            Com o avanço dos recursos e pesquisas na área medica, é possível que em breve ofereçam outras
-                            opções para a mulher com Síndrome de Rokitansky. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-    </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="logo">
-                        <img src="images/roki-logo-rodape.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <p class="dkvine">
-                        Se você, sua filha, sua paciente ou qualquer conhecida foi diagnosticada<br class="dn620">
-                        com a Síndrome de Rokitansky, entre em contato com o Instituto Roki.<br class="dn620">
-                        Estamos prontas para dar todo suporte que vocês precisam!<br class="dn620">
-                    </p>
-                    <div class="socials socials-left d-flex flex-row-reverse">
-                        <ul>
-                            <li>
-                                <a href="https://wa.me/5511944990015" target="_blank"><img src="images/roki-rodape-whatsapp.jpg" alt=""></a></li>
-                            <li>
-                                <a href="https://www.facebook.com/institutoroki/" target="_blank"><img src="images/roki-rodape-facebook.jpg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/institutoroki/?hl=pt-br" target="_blank"><img src="images/roki-rodape-instagram.jpg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div> 
-                    <span class="ps p-dk a-dkvine">Telefone (11) 9 4499.0015 | Email <a href="mailto:contato@institutoroki.com.br">contato@institutoroki.com.br</a> </span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="dist/all.js?cb=1594751662172"></script>
-    <script src="app/responsive-menu/js/classie.js"></script>
-	<script src="app/responsive-menu/js/mlpushmenu.js"></script>
-	<script>
-			new mlPushMenu( document.getElementById( 'mp-menu' ), document.querySelector( '.menu-act' ), {
-				type : 'cover'
-			} );
-		</script>
-</body>
-</html>

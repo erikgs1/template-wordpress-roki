@@ -11,8 +11,22 @@
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 480px;
-    @media #{$mq-620-up}{
-        background-size: cover;
-        background-position: center;
+    background-size: cover;
+    background-position: top;
+    .sidebar{
+        margin-top: 5rem;
+        @media #{$mq-1000-down}{
+            margin-top: 3rem;
+        }
+    }
+    @media #{$mq-1000-down}{
+        h1{
+            margin: 3.5rem 0 2.5rem 0;
+        }
+    }
+    h4{
+        font-style: italic;
+        margin-bottom: 2rem;
+        line-height: 1.5;
     }
 }

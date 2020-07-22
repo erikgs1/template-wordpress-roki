@@ -46,23 +46,3 @@ aside {
         flex: 1;
     }
 }
-/* Padding Bottom do Aside */
-.paddingo-b-aside{
- padding-bottom: 35px;
-}
-
-.dn620{
-    @media#{$mq-620-down}{
-        display: none !important;
-    }
-}
-.db620{
-    @media#{$mq-620-down}{
-        display: block !important;
-    }
-}
-.p-0-620{
-    @media#{$mq-620-down}{
-        padding: 0;
-    }
-}
