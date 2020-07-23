@@ -36,6 +36,7 @@
                                       d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
                               </svg>                              
                         </div>
+                        
                         <!-- <div class="menu-responsive-trigger menu-responsive-trigger2"></div> -->
                     </div>
                     
@@ -47,58 +48,17 @@
                                 dynamic_sidebar( 'social-header' );
                             }
                         ?>
-                       
                             <ul class="ul a-dkvine"  >
-                                <li class="logo-mobile">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-roki.png" alt="">
-                                </li>
-                                <li class="instituto pipe">
-                                    <a href="#">Instituto Roki</a> 
-                                    <nav class="sub-menu">
-                                        <a href="#">Nossa história</a>
-                                        <a href="#">Fundadoras</a>
-                                    </nav>
-                                </li>
-                                <li class="sindrome pipe">
-                                    <a href="#">Síndrome de Rokitansky</a>
-                                    <nav class="sub-menu">
-                                        <a href="#">Sobre a Síndrome</a>
-                                        <a href="#">Tratamentos</a>
-                                        <a href="#">Vida sexual e maternidade</a>
-                                        <a href="#">Eventos</a>
-                                        <a href="#">Artigos</a>
-                                    </nav>
-                                </li>
-                                <li class="mulheres pipe">
-                                    <a href="#">Mulheres</a>
-                                    <nav class="sub-menu">
-                                        <a href="#">Para Mulheres</a>
-                                        <a href="#">Guia</a>
-                                        <a href="#">Relatos</a>
-                                        <a href="#">Para saber mais</a>
-                                    </nav>
-                                </li>
-                                <li class="familiares pipe">
-                                    <a href="#">Familiares</a>
-                                    <nav class="sub-menu">
-                                        <a href="#">Para Familiares</a>
-                                        <a href="#">Guia</a>
-                                        <a href="#">Relatos</a>
-                                        <a href="#">Para saber mais</a>   
-                                    </nav>                                 
-                                </li>
-                                <li class="profissionais pipe">
-                                    <a href="#">Profissionais de Saúde</a>
-                                    <nav class="sub-menu">
-                                        <a href="#">Para profissionais de saúde</a>
-                                        <a href="#">Guia</a>
-                                        <a href="#">Instituições e profissionais</a>
-                                    </nav>
-                                </li>
-                                <li class="contato">
-                                    <a href="#">Fale Conosco</a>
-                                </li>
+                            <?php 
+                                        wp_nav_menu( 
+                                            array( 
+                                                'theme_location' => 'my_main_menu' 
+                                                ) 
+                                        ); 
+                                    ?>
+                                
                             </ul>
+                           
                     </div>
                 </div>
             </div>
@@ -110,7 +70,7 @@
 
                 
                 <nav id="mp-menu" class="mp-menu">
-                    
+                
                     <div class="mp-level">
                     
                         <ul>

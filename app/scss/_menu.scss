@@ -201,7 +201,7 @@
       li{  
           float: left;
           position: relative;  
-
+          width: 100%;
           @media #{ $mq-1000-down } {
             width: 100%;
             display: block;
@@ -423,4 +423,7 @@ body.menu-active {
   .menu-hamburger .ham {
     //right: calc(100vw - 60px);
   }
+}
+.primary-menu{
+  width: auto !important;
 }

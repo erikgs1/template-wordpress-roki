@@ -20,6 +20,52 @@
 	add_theme_support( 'title-tag');
 	add_theme_support( 'custom-logo', array( 'height' => 90, 'width' => 132 ) );
 
+
+
+	
+// Função de Configuração do Tema
+function roki_config(){
+	// Registrando nossos menus
+	register_nav_menus(
+		array(
+			'my_main_menu' => __( 'Main Menu', 'roki' ),
+			'footer_menu' => __( 'Footer Menu', 'roki' )
+		)
+	);	
+
+	// Adicionando suporte ao tema
+	$args = array(
+		'height'	=> 225,
+		'width'		=> 1920
+	);
+	add_theme_support( 'custom-header', $args );
+	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-formats', array( 'video', 'image' ) );
+	add_theme_support( 'title-tag');
+	add_theme_support( 'custom-logo', array( 'height' => 110, 'width' => 200 ) );
+
+	// Suporte ao Gutenberg
+	add_theme_support( 'align-wide' );
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name' => __( 'Blood Red' , 'roki' ),
+			'slug' => 'blood-red',
+			'color' => '#b9121b'
+		),
+		array(
+			'name' => __( 'White' , 'roki' ),
+			'slug' => 'white',
+			'color' => '#ffffff'
+		)		
+	) );
+	add_theme_support( 'disable-custom-colors' );
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'css/style-editor.css' );
+	add_theme_support( 'wp-block-styles' );
+
+}
+add_action( 'after_setup_theme', 'roki_config', 0 );
+
 // Registrando Widgets
 add_action( 'widgets_init', 'roki_widgets' );
 function roki_widgets(){
