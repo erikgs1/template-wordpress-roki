@@ -19,16 +19,18 @@ header{
     width: 100%;
     height: 150px;
     .logo{
-        text-align: center;
-        @media #{$mq-620-up}{
-            flex: 100%;
-            max-width: 100%;
-            padding-bottom: 20px;
-            text-align: left;
-        }
-        @media #{$mq-620-down}{
-            img{
-                margin-left: 40px;
+        a{
+            text-align: center;
+            @media #{$mq-620-up}{
+                flex: 100%;
+                max-width: 100%;
+                padding-bottom: 20px;
+                text-align: left;
+            }
+            @media #{$mq-620-down}{
+                img{
+                    margin-left: 40px;
+                }
             }
         }
     }

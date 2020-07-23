@@ -42,22 +42,12 @@
                 </div>
                 <div  class="col-md-10">
                     <div class="main-menu">
-                      
-                        <div class="socials d-flex flex-row-reverse">
-                            <ul>
-                                <li>
-                                    <a href="https://wa.me/5511944990015" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/whatsapp-logo.png" alt=""></a></li>
-                                <li>
-                                    <a href="https://www.facebook.com/institutoroki/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-logo.png" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/institutoroki/?hl=pt-br" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-logo.png" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>     
-                        
-                    
-                            
+                        <?php 
+                            if( is_active_sidebar( 'social-header' )){
+                                dynamic_sidebar( 'social-header' );
+                            }
+                        ?>
+                       
                             <ul class="ul a-dkvine"  >
                                 <li class="logo-mobile">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo-roki.png" alt="">

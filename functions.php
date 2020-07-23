@@ -21,12 +21,24 @@
 	add_theme_support( 'custom-logo', array( 'height' => 90, 'width' => 132 ) );
 
 // Registrando Widgets
-add_action( 'widgets_init', 'roki_footers' );
-function roki_footers(){
+add_action( 'widgets_init', 'roki_widgets' );
+function roki_widgets(){
 
 	register_sidebar(
 		array(
-			'name' => __( 'Footer', 'roki'),
+			'name' => __( 'Header Social', 'roki'),
+			'id' => 'social-header',
+			'description' => __( 'HTML to be used on Social Header', 'roki'),
+			'before_widget' => '<div class="widget-wrapper">',
+			'after_widget' => '</div>',
+			'before_title' => '<h2 class="widget-title">',
+			'after_title' => '</h2>'
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name' => __( 'Footer Frase', 'roki'),
 			'id' => 'footer',
 			'description' => __( 'HTML to be used on Footer Page', 'roki'),
 			'before_widget' => '<div class="widget-wrapper">',
@@ -37,7 +49,7 @@ function roki_footers(){
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Footer', 'roki'),
+			'name' => __( 'Footer Social', 'roki'),
 			'id' => 'footer-2',
 			'description' => __( 'HTML to be used on Footer Page', 'roki'),
 			'before_widget' => '<div class="widget-wrapper">',
@@ -48,7 +60,7 @@ function roki_footers(){
 	);
 	register_sidebar(
 		array(
-			'name' => __( 'Footer', 'roki'),
+			'name' => __( 'Footer Contato', 'roki'),
 			'id' => 'footer-3',
 			'description' => __( 'HTML to be used on Footer Page', 'roki'),
 			'before_widget' => '<div class="widget-wrapper">',
