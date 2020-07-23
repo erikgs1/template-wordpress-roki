@@ -9,7 +9,6 @@
     <meta name="theme-color" content="#1843c1" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
     <title>Instituto Roki</title>
-    <link rel="stylesheet" href="dist/style.css?cb=1595300405964">
     <link rel="stylesheet" type="text/css" href="app/responsive-menu/css/icons.css" />
 	<link rel="stylesheet" type="text/css" href="app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="app/responsive-menu/css/component.css" />
@@ -23,8 +22,7 @@
             <div class="row ">
                 <div class="col-md-2">
                     <div class="logo">
-                        <img src="images/logo-roki.png" alt="">
-						
+						<?php the_custom_logo(); ?>
 						<div class="menu-hamburger float-right d-sm-none  d-md-none d-lg-none d-xl-none">                            
                             <svg class="menu-act ham hamRotate ham1" viewBox="0 0 100 100" width="80">
                                 <path
@@ -48,12 +46,12 @@
                         <div class="socials d-flex flex-row-reverse">
                             <ul>
                                 <li>
-                                    <a href="https://wa.me/5511944990015" target="_blank"><img src="images/whatsapp-logo.png" alt=""></a></li>
+                                    <a href="https://wa.me/5511944990015" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/whatsapp-logo.png" alt=""></a></li>
                                 <li>
-                                    <a href="https://www.facebook.com/institutoroki/" target="_blank"><img src="images/facebook-logo.png" alt=""></a>
+                                    <a href="https://www.facebook.com/institutoroki/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-logo.png" alt=""></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/institutoroki/?hl=pt-br" target="_blank"><img src="images/instagram-logo.png" alt=""></a>
+                                    <a href="https://www.instagram.com/institutoroki/?hl=pt-br" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-logo.png" alt=""></a>
                                 </li>
                             </ul>
                         </div>     
@@ -62,7 +60,7 @@
                             
                             <ul class="ul a-dkvine"  >
                                 <li class="logo-mobile">
-                                    <img src="images/logo-roki.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-roki.png" alt="">
                                 </li>
                                 <li class="instituto pipe">
                                     <a href="#">Instituto Roki</a> 

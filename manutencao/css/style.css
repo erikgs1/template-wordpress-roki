@@ -1,0 +1,268 @@
+
+*{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "asapmedium";
+    src: url("../fontes/asap-medium-webfont.woff2") format("woff2"),
+         url("../fontes/asap-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "asapregular";
+    src: url("../fontes/asap-regular-webfont.woff2") format("woff2"),
+         url("../fontes/asap-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "asapmedium", "asapregular", "Verdana";
+
+}
+.body {
+  width: 100%;
+  border: 1px solid;
+}
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 70px;
+    margin: 0 auto;
+  }
+.reponsive-txt{
+  display: none;
+}
+header {
+    width: 100%;
+    height: 140px;
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+header .logo {
+    width: 10%;
+    float: left;
+}
+/* responsive menu */
+
+.nav-responsive{
+    display: none;
+}
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 10px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+/* responsive menu */
+header nav.nav{
+    width: 66%;
+    float: left;
+}
+header nav.nav ul{
+    display: flex;
+    min-height: 85px;
+    align-items: flex-end;
+    margin-left:  70px;
+    float: left;
+}
+header nav.nav ul li{
+    float: left;
+    
+}
+header nav.nav ul li.pipe::after{
+    content: "|";
+    margin: 0 15px;
+    color: #66041e;
+    cursor: pointer;
+}
+header nav.nav ul li a{
+    color: #66041e;
+    font-size: 0.75rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .socials{
+    width: 16%;
+    float: left;
+    display: flex;
+    min-height: 85px;
+    align-items: flex-end;
+}
+header .socials ul{
+    width: 100%;
+    float: left;
+}
+header .socials ul li{
+    float: left;
+    width: 33%;
+}
+main {
+    width: 100%;
+    float: left;
+}
+main .text {
+    margin-top: 50px;
+}
+main .text p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    font-family: "asapregular", "verdana";
+}
+main .text .plus-txt{
+    font-size: 	1.125rem;
+}
+/* ====== Font Size ====== 
+
+        12px = 0.75rem
+        16px = 1rem 
+
+ ====== // Font Size ====== */

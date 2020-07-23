@@ -6,40 +6,34 @@
 @import "global";
 @import "dynamic";
 .nossa-historia{
-    background-image: url(../images/background-nossa-historia.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 3rem;
-    @media #{$mq-620-down}{
-        background-size: cover;
-        background-position: center;
-    }
-    .main-content{
-        padding-right: 30px;
-    }
-    h4{
-        margin: 2rem 0;
-    }
-    .disc-li{ 
-        margin-left: 15px;
-        @extend %disc;
-    }
-    %disc::before{
-        margin-left: 15px;
-        @media #{$mq-620-down}{
-            margin-left: 0;
+    main{
+        .main-content{
+            padding-right: 30px;
+        }
+        h4{
+            margin: 2rem 0;
+        }
+        .disc-li{ 
+            margin-left: 15px;
+            @extend %disc;
+        }
+        %disc::before{
+            margin-left: 15px;
+            @media #{$mq-620-down}{
+                margin-left: 0;
+            }
+        }
+        ul{
+            padding-left: 15px;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        ul li:before {
+            content: '\2022';
+            position: absolute;
+            margin-left: -15px;
+            color: $ltvine;
         }
     }
-    ul{
-        padding-left: 15px;
-        li{
-            margin-bottom: 10px;
-        }
-    }
-    ul li:before {
-        content: '\2022';
-        position: absolute;
-        margin-left: -15px;
-        color: $ltvine;
-       }
 }

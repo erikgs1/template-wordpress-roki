@@ -1,0 +1,63 @@
+@media only screen and (min-width: 1280px){
+    body{
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 768px){
+    .nav-responsive{
+        display: block;
+    }
+    .reponsive-txt{
+        display: block;
+        max-width: 70%;
+      }
+    .desktop-txt{
+        display: none !important;
+    }
+    .container{
+        padding-left: 20px;
+    }
+    .header .logo {
+        padding: 10px 0px;
+    }
+    .header .logo img{
+        max-width: 90px;
+    }   
+    .header .menu-icon{
+        padding: 35px 20px;
+    }
+    header{
+        padding-top: 0;
+    }
+    header .logo{
+        width: 62%;
+        text-align: right;
+    }
+    .header li a {
+        border: none;
+        color: #66041e;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    header nav.nav ul{
+        display: inline;
+    }
+    header .socials{
+        width: 100%;
+        min-height: auto;
+    }
+    header .socials ul li{
+        text-align: center;
+    }
+    header .socials a{
+        padding: 0;
+    }
+    header .socials a img {
+        max-width: 40px;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    
+}

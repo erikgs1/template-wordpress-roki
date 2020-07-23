@@ -5,17 +5,7 @@
 @import "global";
 @import "dynamic";
 .home{
-    
     .main-background{
-        @media #{$mq-620-down}{
-            min-height: 300px;
-            background-size: cover;
-            background-position: 80%;
-            background-repeat: no-repeat;
-            img{
-                display: none;
-            }
-        }
         text-align: center;
         position: relative;
         .absolute-text{
@@ -27,6 +17,12 @@
             left: 0;
             width: 100%;
             text-align: left;
+        }
+    }
+    .aside-title{
+        p{
+            color: $dkvine;
+            margin-top: 0.5rem;
         }
     }
     .main-content{

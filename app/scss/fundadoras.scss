@@ -7,16 +7,6 @@
 @import "global";
 @import "dynamic";
 .fundadoras {
-    background-image: url(../images/background-fundadoras.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 650px;
-    background-position: top;
-    padding-bottom: 60px;
-    @media #{$mq-620-up}{
-        background-size: cover;
-        background-position: center;
-    }
     h1, h2{
         margin: 5.5rem 0 4.5rem 0;
     }

@@ -21,9 +21,9 @@
            }
     }
     .main-background{
-        background-image: url(../images/roki-sobre-a-sindrome.jpg);
         background-position: top;
         background-repeat: no-repeat;
+        background-size: unset;
         @media #{$mq-620-down}{
             background-size: cover;
             background-position: center;

@@ -7,7 +7,6 @@
 @import "dynamic";
 .tratamentos{
     .main-background{
-        background-image: url(../images/roki-tratamentos.jpg);
         background-position: top;
         background-repeat: no-repeat;
         @media #{$mq-620-down}{

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
-
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variables";
 @import "colors";
@@ -7,155 +5,147 @@
 @import "global";
 @import "dynamic";
 .fale-conosco{
-background-image: url(../images/background-fundadoras.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 650px;
-    background-position: top;
-    padding-bottom: 60px;
-    @media #{$mq-620-up}{
-        background-size: cover;
-        background-position: center;
-    }
-    h1, h2{
-        margin: 5.5rem 0 4.5rem 0;
-    }
-.main-content-text{
-    h4{
-        font-size: 2rem;
-        margin-bottom: 4rem;
-    }
-    
-}
-.ul-aside-contato{
-    margin-top: 6rem;
-    background-image: url(../images/roki-boxe-contato.jpg);
-    min-height: 295px;
-    padding-top: 30px;
-    li{
-        a{
-            color: $dkvine;
-        }
-        h4{
-            line-height: 2;
-        }
-    }
-}
-/* form */
-.form{
-    @media #{$mq-620-down}{
-        padding-left: 15px !important;
+    main{
+            h1, h2{
+                margin: 5.5rem 0 4.5rem 0;
+            }
         .main-content-text{
-            padding-top: 0 !important;
+            h4{
+                font-size: 2rem;
+                margin-bottom: 4rem;
+            }
+            
         }
-    }
-    
-}
-input, textarea{
-    border: 0;
-    background-color: $whitevine;
-    padding: 10px;
-    color: $black;
-    font-size: 0.9rem;
-    outline: none;
-}
-textarea{
-    resize: none;
-    min-height: 110px;
-}
-/* placeholder color */
-::-webkit-input-placeholder {
-    color: $black;  
- }
- 
- :-moz-placeholder { /* Firefox 18- */
-    color: $black;  
- }
- 
- ::-moz-placeholder {  /* Firefox 19+ */
-    color: $black;  
- }
- 
- :-ms-input-placeholder {  
-    color: $black;  
- }
- /* placeholder color */
-
-/* checkbox */
-.box {
-    width: 300px;
-    margin: 10px 0 30px 0;
-    display: flex;
-    align-items: center;
-    user-select: none;
-
-    label {
-        font-size: 0.7rem;
-        color: $black;
-        position: absolute;
-        z-index: 10;
-        padding-left: 30px;
-        cursor: pointer;
-    }
-
-    input {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-
-        &:checked {
-
-            ~ .check {
-                border-color: $ltvine;
-                box-shadow: 0px 0px 0px 15px $ltvine inset;
-                opacity: 1;
-                &::after {
-                    opacity: 1;
-                    transform: scale(1);
+        .ul-aside-contato{
+            margin-top: 6rem;
+            background-image: url(../images/roki-boxe-contato.jpg);
+            min-height: 295px;
+            padding-top: 30px;
+            li{
+                a{
+                    color: $dkvine;
+                }
+                h4{
+                    line-height: 2;
                 }
             }
         }
-    }
-
-    .check {
-        width: 20px;
-        height: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        border-radius: 100px;
-        background-color: #FFF;
-        border: 1px solid $ltvine;
-        opacity: 0.5;
-        box-shadow: 0px 0px 0px 0px $ltvine inset;
-        transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
-
-        &::after {
-            content: '';
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            z-index: 4;
-            position: absolute;
-            transform: scale(0);
-            background-size: 50%;
-            background-image: url('http://s6.picofile.com/d/8392306668/c38c12a0-6db3-47d4-a80c-7dad8fab5186/checkmark.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            transition-delay: 0.2s !important;
-            transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+        /* form */
+        .form{
+            @media #{$mq-620-down}{
+                padding-left: 15px !important;
+                .main-content-text{
+                    padding-top: 0 !important;
+                }
+            }
+            
         }
-    }
-}
-/* // checkbox */
+        input, textarea{
+            border: 0;
+            background-color: $whitevine;
+            padding: 10px;
+            color: $black;
+            font-size: 0.9rem;
+            outline: none;
+        }
+        textarea{
+            resize: none;
+            min-height: 110px;
+        }
+        /* placeholder color */
+        ::-webkit-input-placeholder {
+            color: $black;  
+        }
+        
+        :-moz-placeholder { /* Firefox 18- */
+            color: $black;  
+        }
+        
+        ::-moz-placeholder {  /* Firefox 19+ */
+            color: $black;  
+        }
+        
+        :-ms-input-placeholder {  
+            color: $black;  
+        }
+        /* placeholder color */
 
-button{
-    border: none;
-    padding: 5px 25px;
-    color: #fff;
-    background-color: $ltvine;
-    font-size: 0.8rem;
-}
-/* // form */
+        /* checkbox */
+        .box {
+            width: 300px;
+            margin: 10px 0 30px 0;
+            display: flex;
+            align-items: center;
+            user-select: none;
+
+            label {
+                font-size: 0.7rem;
+                color: $black;
+                position: absolute;
+                z-index: 10;
+                padding-left: 30px;
+                cursor: pointer;
+            }
+
+            input {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+
+                &:checked {
+
+                    ~ .check {
+                        border-color: $ltvine;
+                        box-shadow: 0px 0px 0px 15px $ltvine inset;
+                        opacity: 1;
+                        &::after {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+
+            .check {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                border-radius: 100px;
+                background-color: #FFF;
+                border: 1px solid $ltvine;
+                opacity: 0.5;
+                box-shadow: 0px 0px 0px 0px $ltvine inset;
+                transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    z-index: 4;
+                    position: absolute;
+                    transform: scale(0);
+                    background-size: 50%;
+                    background-image: url('http://s6.picofile.com/d/8392306668/c38c12a0-6db3-47d4-a80c-7dad8fab5186/checkmark.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition-delay: 0.2s !important;
+                    transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+                }
+            }
+        }
+        /* // checkbox */
+
+        button{
+            border: none;
+            padding: 5px 25px;
+            color: #fff;
+            background-color: $ltvine;
+            font-size: 0.8rem;
+        }
+        /* // form */
+    }
 }

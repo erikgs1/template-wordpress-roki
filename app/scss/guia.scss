@@ -7,11 +7,6 @@
 @import "global";
 @import "dynamic";
 .guia{
-    background-image: url(../images/background-fundadoras.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 480px;
-    background-size: cover;
     background-position: top;
     .sidebar{
         margin-top: 5rem;
@@ -28,5 +23,6 @@
         font-style: italic;
         margin-bottom: 2rem;
         line-height: 1.5;
+        font-size: 1.3rem;
     }
 }

@@ -18,42 +18,14 @@
 @import "footer";
 @import "fale-conosco";
 
-main {
+main{
     width: 100%;
     float: left;
     padding-bottom: 60px;
     .content-main{
         margin-bottom: 30px;
-        @media #{$mq-620-up}{
+        @media #{$mq-1000-up}{
             margin-bottom: 80px;
-        }
-    }
-    .main-background{
-        .main-txt{
-            p{
-                text-shadow: 1px 1px 2px #000;
-                color: #fff;
-            }
-            @media #{$mq-620-up}{
-                p{
-                    text-shadow: none;
-                    font-size: 18px;
-                }
-            }
-        }
-        .main-title{
-            h2{
-                color: #fff;
-                font-size: 20px;
-                text-shadow: 1px 1px 2px #000;
-            }
-            @media #{$mq-620-up}{
-                h2{
-                    font-size: 35px;
-                    font-weight: 300;
-                    text-shadow: none;
-                }
-            }
         }
     }
     .main-aside{
@@ -61,17 +33,15 @@ main {
         margin-top: 30px;
         background-repeat: no-repeat;
         background-size: contain;
-        @media #{$mq-620-up}{
-            padding: 4.3rem 3.8rem 0 1.5rem;
-        }
-        @media #{$mq-620-down}{
+        padding: 4.3rem 3rem 3rem 1.5rem;
+        @media #{$mq-1000-down}{
             background-size: cover;
-            padding: 0 20px;
+            padding: 1rem 1rem 2rem;
         }
     }
     .main-content{
         padding: 30px 0 0 ;
-        @media #{$mq-620-up}{
+        @media #{$mq-1000-up}{
         padding: 6rem 0 0 0;
             .main-content-text{
                 margin-left: 30px;
@@ -80,8 +50,43 @@ main {
                 }
             }
         }
-        @media #{$mq-620-down}{
+        @media #{$mq-1000-down}{
             padding: 3rem 1rem 0 1rem !important; 
+        }
+    }
+}
+.main-background{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
+    @media #{$mq-620-down}{
+        background-size: cover;
+        background-position: center;
+    }
+    .main-txt{
+        p{
+            text-shadow: 1px 1px 2px #000;
+            color: #fff;
+        }
+        @media #{$mq-1000-up}{
+            p{
+                text-shadow: none;
+                font-size: 18px;
+            }
+        }
+    }
+    .main-title{
+        h2{
+            color: #fff;
+            font-size: 20px;
+            text-shadow: 1px 1px 2px #000;
+        }
+        @media #{$mq-1000-up}{
+            h2{
+                font-size: 35px;
+                font-weight: 300;
+                text-shadow: none;
+            }
         }
     }
 }
