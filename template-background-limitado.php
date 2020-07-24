@@ -1,10 +1,19 @@
+<?php 
+
+/*
+
+Template Name: Fundo limitado
+
+*/
+
+?>
 <?php get_header(); ?>
 <?php 
     $thumb_id = get_post_thumbnail_id();
     $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
     $thumb_url = $thumb_url_array[0];
 ?>
-<main class="main-background" style="background-image:url(<?php echo $thumb_url ?>)">
+<main class="main-background-not100" style="background-image:url(<?php echo $thumb_url ?>)">
         <div class="container"> 
             <div class="row">
                 <!-- Espaço em branco background -->
@@ -36,4 +45,5 @@
             </div>
         </div>   
     </main>
+
 <?php get_footer(); ?>

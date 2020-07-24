@@ -92,7 +92,7 @@ Template Name: Home
                         <div class="paddingo-b-aside">
                             <div class="aside-link">
                                 <span >Confira os próximos eventos e os
-                                eventos anteriores, clicando <a href="#">aqui</a></span>  
+                                eventos anteriores, clicando <a href="#" class="a_">aqui</a></span>  
                             </div>
                         </div>
                     </div>
