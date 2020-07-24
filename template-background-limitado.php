@@ -21,25 +21,26 @@ Template Name: Fundo limitado
                 </div>
                 <!-- // Espaço em branco background -->
                 <!-- Conteudo -->
-                <div class=" col-md-8 p-0">
-                    <div class="page-title">
-                        <h1><?php echo the_title() ?></h1>
-                    </div>  
-                    
-			        <?php
-                        // Start the Loop.
-                        while ( have_posts() ) :
-                            the_post();
-                    ?>
-                           <div class="entry-content">
-                                <?php
-                                    the_content();
-                                ?>
-                            </div>
-                    <?php 
-                        endwhile; // End the loop.
-                    ?>
-                    
+                <div class=" col-md-8">
+                    <div class="list-bullet">
+                        <div class="page-title">
+                            <h1><?php echo the_title() ?></h1>
+                        </div>  
+                        
+                        <?php
+                            // Start the Loop.
+                            while ( have_posts() ) :
+                                the_post();
+                        ?>
+                            <div class="entry-content">
+                                    <?php
+                                        the_content();
+                                    ?>
+                                </div>
+                        <?php 
+                            endwhile; // End the loop.
+                        ?>
+                    </div>
                 </div>
                 <!-- Conteudo -->
             </div>

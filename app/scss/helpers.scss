@@ -27,3 +27,17 @@
         }
     }
 }
+.list-bullet{
+    ul{
+        padding-left: 15px;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+    ul li:before {
+        content: '\2022';
+        position: absolute;
+        margin-left: -15px;
+        color: $ltvine;
+    }
+}
