@@ -19,36 +19,17 @@ Template Name: Tratamentos
                 <div class=" col-md-4">
                 </div>
                 <div class=" col-md-8">
-                    <div>
+                    <div class="main-content-text ml-0 mt-5 pt-5">
                         <div class="page-title">
-                            <h1>Tratamentos</h1>
-                        </div>    
-                        <p>
-                            Pesquisas e estudos médicos apresentam possibilidades de tratamentos, clínicos e cirúrgicos,
-                            para o desenvolvimento do canal vaginal. Atualmente, o tratamento com dilatadores é a primeira
-                            recomendação entre médicos especialistas em Síndrome de Rokitansky do mundo inteiro. A
-                            opção pela cirurgia sempre envolverá riscos, necessita de anestesia geral e não elimina o uso de
-                            dilatadores, após a grande maioria das técnicas cirúrgicas. Por isso, devem ser consideradas, apenas,
-                            quando não houver sucesso com a dilatação. O médico poderá esclarecer todos os procedimentos e
-                            acompanhar a escolha da mulher quando ela estiver segura e confiante para tomar sua decisão.
-                        </p>
-                        <h4>Dilatadores</h4>
-                        <p>
-                            A técnica de dilatação progressiva foi definida em 1938 e é conhecida como Método Frank. Consiste
-                            no uso diário de dilatadores plásticos de tamanhos diferentes e progressivos. As sessões devem
-                            durar de 20 a 30 min, para que se obtenha sucesso no tratamento.
-                        </p>
-                        <p>
-                            Geralmente, os conjuntos de dilatadores são compostos por 5 ou 6 tamanhos diferentes, que variam
-                            de 6 a 15 cm de comprimento. O primeiro dilatador é semelhante a um absorvente interno vaginal
-                            fino. À medida que a vagina se estende, deve substituir o dilatador pelo próximo tamanho até
-                            completar o tratamento com o uso dos dilatadores maiores. A duração do tratamento varia entre 6
-                            e 12 meses e deverá ser orientado e acompanhado pelo profissional de saúde.
-                        </p>
-                        <p>
-                            Abaixo indicamos a forma correta para o uso dos dilatadores:
-                        </p>
-                    </div>
+                            <h1><?php echo the_title() ?></h1>
+                        </div> 
+                        <div class="list-bullet">
+                            <?php 
+                                $firstText = get_field('sobre_a_sindrome_texto_primario');
+                                echo $firstText;
+                            ?>
+                        </div> 
+                    </div> 
                 </div>
             </div>
             <div class="row">
