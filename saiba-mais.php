@@ -24,7 +24,7 @@ Template Name: Saiba Mais
                 <div class=" col-md-8">
                     <div class="list-bullet saiba-mais" >
                         <div class="page-title">
-                            <h1><?php echo the_title() ?></h1>
+                            <h1><?php $title = get_field('nome_da_pagina'); echo $title; ?></h1>
                         </div>  
                         <div class="saiba-mais">
                             <div class="mt-4 mb-4">
@@ -33,48 +33,58 @@ Template Name: Saiba Mais
                                     echo $description;
                                 ?>
                             </div>
-                            <h6>
+                            <div>
                                 <?php 
                                     if( have_rows('modelob_list') ):
                                         while ( have_rows('modelob_list') ) : the_row();
-                                            $sub_value = get_sub_field('nome');
-                                            echo $sub_value;
+                                            $nome1 = get_sub_field('nome');
+                                            $texto1 = get_sub_field('texto');
+                                            echo '<div class="mb-3">';
+                                            echo ' <h6> ' . $nome1 . '</h6>';
+                                            echo ' <p> ' . $texto1 . '</p>';
+                                            if( have_rows('link_repeater') ):
+                                                while ( have_rows('link_repeater') ) : the_row();
+                                                    $link = get_sub_field('link');
+                                                    echo '<a href="' . $link .'" >';
+                                                    echo $link;
+                                                    echo '</a>';
+                                                endwhile;
+                                            else :
+                                            endif;
+                                            echo '</div>';
                                         endwhile;
                                     else :
                                     endif;
                                 ?>
-                            </h6>
-                            <p>
-                                <?php 
-                                    if( have_rows('modelob_list') ):
-                                        while ( have_rows('modelob_list') ) : the_row();
-                                            $sub_value = get_sub_field('texto');
-                                            echo $sub_value;
-                                        endwhile;
-                                    else :
-                                    endif;
-                                ?>
-                            </p>
-                            <?php 
-                                if( have_rows('modelob_list') ):
-                                    while ( have_rows('modelob_list') ) : the_row();
-                                        $sub_value = get_sub_field('link');
-                                        
-                                        
-                                    endwhile;
-                                else :
-                                endif;
-                            ?>
-                            <?php 
-                                if( have_rows('modelob_list') ):
-                                    while ( have_rows('modelob_list') ) : the_row();
-                                        $sub_value_2 = get_sub_field('link-2');
-                                    endwhile;
-                                else :
-                                endif;
-                            ?>
-                            <a href="<?php echo $sub_value; ?>"><?php echo $sub_value; ?></a><br>
-                            <a href="<?php echo $sub_value_2; ?>"><?php echo $sub_value_2; ?></a>
+                            </div>
+                            <div>
+                                <h4><?php $title = get_field('titulo_da_sessao'); echo $title; ?></h4>
+                                <div>
+                                    <?php 
+                                        if( have_rows('modelob_list_2') ):
+                                            while ( have_rows('modelob_list_2') ) : the_row();
+                                                $nome2 = get_sub_field('nome');
+                                                $texto2 = get_sub_field('texto');
+                                                echo '<div class="mb-3">';
+                                                echo ' <h6> ' . $nome2 . '</h6>';
+                                                echo ' <p> ' . $texto2 . '</p>';
+                                                if( have_rows('link_repeater') ):
+                                                    while ( have_rows('link_repeater') ) : the_row();
+                                                        $link2 = get_sub_field('link');
+                                                        echo '<a href="' . $link2 .'" >';
+                                                        echo $link2;
+                                                        echo '</a>';
+                                                    endwhile;
+                                                else :
+                                                endif;
+                                                echo '</div>';
+                                            endwhile;
+                                        else :
+                                        endif;
+                                    ?>
+                                </div> 
+                            </div>
+                               
                         </div>
                     </div>
                 </div>

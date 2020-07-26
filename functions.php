@@ -117,8 +117,6 @@ function roki_widgets(){
 	);	
 }
 
-add_action('init', 'register_cpt_evento');
-
 function register_cpt_evento() {
   register_post_type('evento', array(
     'labels' => array(
@@ -142,7 +140,7 @@ function register_cpt_evento() {
     'public' => true,
     'show_ui' => true,
     'show_in_menu' => true,
-    'menu_icon' => '',
+    'menu_icon' => 'dashicons-calendar-alt',
     'menu_position' => '5',
     'show_in_nav_menus' => true,
     'publicly_queryable' => true,
@@ -154,43 +152,5 @@ function register_cpt_evento() {
     'rewrite' => true
   ));
 }
-
-add_action('init', 'register_cpt_artigo');
-
-function register_cpt_artigo() {
-  register_post_type('artigo', array(
-    'labels' => array(
-      'name' => _x('Artigos', 'artigo'),
-      'singular_name' => _x('Artigo', 'artigo'),
-      'add_new' => _x('Adicionar novo', 'artigo'),
-      'add_new_item' => _x('Adicionar novo Artigo', 'artigo'),
-      'edit_item' => _x('Editar Artigo', 'artigo'),
-      'new_item' => _x('Novo Artigo', 'artigo'),
-      'view_item' => _x('Ver Artigo', 'artigo'),
-      'search_items' => _x('Pesquisar Artigos', 'artigo'),
-      'not_found' => _x('Nenhum artigo encontrado', 'artigo'),
-      'not_found_in_trash' => _x('Nenhum artigo encontrado na lixeira', 'artigo'),
-      'parent_item_colon' => _x('Parent Artigo:', 'artigo'),
-      'menu_name' => _x('Artigos', 'artigo')
-    ),
-    'hierarchical' => true,
-    'description' => '',
-    'supports' => array('title', 'editor', 'thumbnail', 'trackbacks', 'custom-fields', 'page-attributes', 'post-formats'),
-    'taxonomies' => array(),
-    'public' => true,
-    'show_ui' => true,
-    'show_in_menu' => true,
-    'menu_icon' => '',
-    'menu_position' => '5',
-    'show_in_nav_menus' => true,
-    'publicly_queryable' => true,
-    'exclude_from_search' => false,
-    'has_archive' => true,
-    'query_var' => true,
-    'can_export' => true,
-    'capability_type' => 'post',
-    'rewrite' => true
-  ));
-}
-
+add_action('init', 'register_cpt_evento');
 ?>

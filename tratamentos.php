@@ -19,7 +19,7 @@ Template Name: Tratamentos
                 <div class=" col-md-4">
                 </div>
                 <div class=" col-md-8">
-                    <div class="main-content-text ml-0 mt-5 pt-5">
+                    <div class="main-content-text">
                         <div class="page-title">
                             <h1><?php echo the_title() ?></h1>
                         </div> 

@@ -97,6 +97,9 @@ main{
         font-size: 1rem;
         color: $ltvine;
         line-height: 2;
+        @media #{$mq-1000-down}{
+            line-height: 1.5;
+        }
     }
     a{
         color: $black;

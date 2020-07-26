@@ -14,7 +14,7 @@ Template Name: Guia
     $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
     $thumb_url = $thumb_url_array[0];
 ?>
-    <main style="background-image:url(<?php echo $thumb_url ?>)">
+    <main class="main-background guia" style="background-image:url(<?php echo $thumb_url ?>)">
         <div class="container pt-3"> 
                 <div class="row">
                     <!-- Espaço em branco background -->

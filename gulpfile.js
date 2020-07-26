@@ -56,7 +56,7 @@ function watchTask(){
         {interval: 1000, usePolling: true}, //Makes docker work
         series(
             parallel(scssTask, jsTask),
-            cacheBustTask
+            //cacheBustTask
         )
     );    
 }
@@ -65,6 +65,6 @@ function watchTask(){
 // then runs cacheBust, then watch task
 exports.default = series(
     parallel(scssTask, jsTask), 
-    cacheBustTask,
+    //cacheBustTask,
     watchTask
 );
