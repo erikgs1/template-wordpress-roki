@@ -85,6 +85,7 @@
                 z-index: 10;
                 padding-left: 30px;
                 cursor: pointer;
+                margin-bottom: 0;
             }
 
             input {
@@ -139,13 +140,6 @@
         }
         /* // checkbox */
 
-        button{
-            border: none;
-            padding: 5px 25px;
-            color: #fff;
-            background-color: $ltvine;
-            font-size: 0.8rem;
-        }
         /* // form */
     }
 
@@ -154,5 +148,15 @@
     p{
         width: 100%;
         margin-bottom: 0.5rem;
+        .wpcf7-text, .wpcf7-tel, .wpcf7-validates-as-tel, .wpcf7-textarea{
+            width: 100%;
+        }
+        .wpcf7-submit{
+            border: none;
+            padding: 5px 25px;
+            color: #fff;
+            background-color: $ltvine;
+            font-size: 0.8rem;
+        }
     }
 }
