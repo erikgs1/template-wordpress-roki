@@ -19,21 +19,32 @@ Template Name: Contatos
             <div class="row">
                 <!-- Espaço em branco background -->
                 <div class=" col-md-4">
+                    <?php 
+                        $whatsapp = get_field('whatsapp');
+                        $whatsappLink = get_field('whatsapp_link');
+                        $facebook2 = get_field('facebook_name');
+                        $facebookLink = get_field('facebook_link');
+                        $instagram = get_field('instagram');
+                        $instagramLink = get_field('instagram_link');
+                        $email = get_field('email');
+                        $emailLink = get_field('email_link');
+
+                    ?>
                     <ul class="ul-aside-contato">
                         <li>
                             <h4 class="head-4-5 txtwhite">Nossos contatos</h4>
                         </li>
                         <li>
-                            <a href="https://wa.me/5511944990015" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-whatsapp.jpg" alt="" class="mr-2">(11) 9 4499.0015</a>
+                            <a href="<?php echo $whatsappLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-whatsapp.jpg" alt="" class="mr-2"><?php echo $whatsapp ?></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/institutoroki/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-facebook.jpg" alt="" class="mr-2">@institutoroki</a>
+                            <a href="<?php echo $facebookLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-facebook.jpg" alt="" class="mr-2"><?php echo $facebook2 ?></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/institutoroki/?hl=pt-br" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-instagram.jpg" alt="" class="mr-2">@institutoroki</a>
+                            <a href="<?php echo $instagramLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-instagram.jpg" alt="" class="mr-2"><?php echo $instagram ?></a>
                         </li>
                         <li>
-                            <a href="mailto:contato@institutoroki.com.br" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-email.jpg" alt="" class="mr-2">contato@institutoroki.com.br</a>
+                            <a href="mailto:<?php echo $emailLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-email.jpg" alt="" class="mr-2"><?php echo $email ?></a>
                         </li>
                     </ul>
                 </div>
@@ -55,16 +66,6 @@ Template Name: Contatos
                         <div class="col-md-8 p-0 pt-2" >
                             <form>
                                 <?php echo do_shortcode('[contact-form-7 id="190" title="Formulário de contato"]'); ?>
-                                <!-- <input class="w-100 mb-2" type="text" placeholder="Nome">
-                                <input class="w-100 mb-2" type="text" placeholder="Email">
-                                <input class="w-100 mb-2" type="text" placeholder="Whatsapp">
-                                <textarea class="w-100" name="Mensagem" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                                <div class="box">
-                                    <input id="one" type="checkbox">
-                                    <span class="check"></span>
-                                    <label for="one">Desejo receber novidades do Instituto Roki por e-mail ou whatsapp.</label>
-                                </div>
-                                <button type="submit">Enviar</button> -->
                             </form>
                         </div>
                     </div>
