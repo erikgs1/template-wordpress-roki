@@ -33,22 +33,22 @@ Template Name: Guia
                     <!-- // Espaço em branco background -->
                     <!-- Conteudo -->
                     <div class=" col-md-8">
-                        <div>
-                        <div class="page-title">
-                            <h1><?php echo the_title() ?></h1>
-                        </div>  
-                        <div class="descricao_guia">
-                            <?php 
-                                $description = get_field('modeloc_descricao');
-                                echo  $description;
-                            ?>
-                            </div>
-                            <p class="mt-2">
+                        <div class="ml-4">
+                            <div class="page-title">
+                                <h1><?php echo the_title() ?></h1>
+                            </div>  
+                            <div class="descricao_guia">
                                 <?php 
-                                    $action = get_field('modeloc_cta');
-                                    echo  $action;
+                                    $description = get_field('modeloc_descricao');
+                                    echo  $description;
                                 ?>
-                            </p>
+                            </div>
+                                <p class="mt-5">
+                                    <?php 
+                                        $action = get_field('modeloc_cta');
+                                        echo  $action;
+                                    ?>
+                                </p>
                         </div>
                     </div>
                     <!-- Conteudo -->

@@ -3,8 +3,6 @@
     function load_scripts(){
         
         wp_enqueue_style( 'style', get_template_directory_uri() . '/dist/style.css', array(), '1.0', 'all' );
-        
-        wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/js/fitvids.js', array( 'jquery' ), null, true );
     }
 
     add_action( 'wp_enqueue_scripts', 'load_scripts' );
@@ -133,7 +131,7 @@ function register_cpt_evento() {
       'parent_item_colon' => _x('Parent Evento:', 'evento'),
       'menu_name' => _x('Eventos', 'evento')
     ),
-    'hierarchical' => true,
+    'hierarchical' => false,
     'description' => '',
     'supports' => array('title', 'editor', 'thumbnail', 'trackbacks', 'custom-fields', 'page-attributes', 'post-formats'),
     'taxonomies' => array(),
@@ -149,7 +147,8 @@ function register_cpt_evento() {
     'query_var' => true,
     'can_export' => true,
     'capability_type' => 'post',
-    'rewrite' => true
+	'rewrite' => true,
+	
   ));
 }
 add_action('init', 'register_cpt_evento');

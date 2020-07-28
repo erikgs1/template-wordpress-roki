@@ -17,7 +17,6 @@
                         <div class="page-title">
                             <h1><?php echo the_title() ?></h1>
                         </div>  
-                        
                         <?php
                             // Start the Loop.
                             while ( have_posts() ) :

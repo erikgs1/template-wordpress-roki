@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#1843c1" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
+    <meta name="theme-color" content="#ba4547" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ba4547">
     <title>Instituto Roki</title>
-    <link rel="stylesheet" type="text/css" href="app/responsive-menu/css/icons.css" />
-	<link rel="stylesheet" type="text/css" href="app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
-	<link rel="stylesheet" type="text/css" href="app/responsive-menu/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/css/component.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="app/responsive-menu/js/modernizr.custom.js"></script>
+    <script src="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/js/modernizr.custom.js"></script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <header>
         <section  class="menu container">
             <div class="row ">
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <div class="logo">
 						<?php the_custom_logo(); ?>
 						<div class="menu-hamburger float-right d-sm-none  d-md-none d-lg-none d-xl-none">                            
@@ -41,23 +41,25 @@
                     </div>
                     
                 </div>
-                <div  class="col-md-10">
+                <div  class="col-md-8">
                     <div class="main-menu">
-                        <?php 
-                            if( is_active_sidebar( 'social-header' )){
-                                dynamic_sidebar( 'social-header' );
-                            }
-                        ?>
-                            <ul class="ul a-dkvine"  >
+                        
+                        <div class="redes-sociais-menu">
                             <?php 
-                                        wp_nav_menu( 
-                                            array( 
-                                                'theme_location' => 'my_main_menu' 
-                                                ) 
-                                        ); 
-                                    ?>
-                                
-                            </ul>
+                                if( is_active_sidebar( 'social-header' )){
+                                    dynamic_sidebar( 'social-header' );
+                                }
+                            ?>
+                        </div>
+                            <div class="ul a-dkvine"  >
+                                <?php 
+                                    wp_nav_menu( 
+                                        array( 
+                                            'theme_location' => 'my_main_menu' 
+                                            ) 
+                                    ); 
+                                ?>
+                            </div>
                            
                     </div>
                 </div>
@@ -75,72 +77,72 @@
                     
                         <ul>
                             <li class="icon icon-arrow-right">								
-                                <a href="#">Instituto Roki <i class="fas fa-arrow-right"></i></a>
+                                <a href="http://agenciacardeal.com.br/rokiteste/nossa-historia/">Instituto Roki <i class="fas fa-arrow-right"></i></a>
                                 <div class="mp-level">									
                                     <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
                                     <ul>
                                         <li>
-                                            <a  href="#">Nossa história</a>
-                                            <a  href="#">Fundadoras</a>										
+                                            <a  href="http://agenciacardeal.com.br/rokiteste/nossa-historia/">Nossa história</a>
+                                            <a  href="http://agenciacardeal.com.br/rokiteste/fundadoras/">Fundadoras</a>										
                                         </li>	
                                     </ul>
                                 </div>
                             </li>
                             <li class="icon icon-arrow-right">
-                                <a href="#">Síndrome de Rokitansky <i class="fas fa-arrow-right"></i></a>
+                                <a href="http://agenciacardeal.com.br/rokiteste/sobre-a-sindrome/">Síndrome de Rokitansky <i class="fas fa-arrow-right"></i></a>
                                 <div class="mp-level">
                                     
                                     <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar</a>
                                     <ul>
-                                        <li><a href="#">Sobre a Síndrome</a></li>
-                                        <li><a href="#">Tratamentos</a></li>
-                                        <li><a href="#">Vida sexual e maternidade</a></li>
-                                        <li><a href="#">Eventos</a></li> 
-                                        <li><a href="#">Artigos</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/sobre-a-sindrome/">Sobre a Síndrome</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/tratamentos/">Tratamentos</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/vida-sexual-e-maternidade/">Vida sexual e maternidade</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/eventos/">Eventos</a></li> 
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/artigos/">Artigos</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="icon icon-arrow-right">
-                                <a href="#">Mulheres <i class="fas fa-arrow-right"></i></a>
+                                <a href="http://agenciacardeal.com.br/rokiteste/para-mulheres/">Mulheres <i class="fas fa-arrow-right"></i></a>
                                 <div class="mp-level">
                                     
                                     <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
                                     <ul>
-                                        <li><a href="#">Para Mulheres</a></li>
-                                        <li><a href="#">Guia</a></li>
-                                        <li><a href="#">Relatos</a></li>
-                                        <li><a href="#">Para saber mais</a></li>                                      
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/para-mulheres/">Para Mulheres</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/guia-para-mulheres/">Guia</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/relatos-mulheres/">Relatos</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/para-saber-mais-mulheres/">Para saber mais</a></li>                                      
                                     </ul>
                                 </div>
                             </li>
                             <li class="icon icon-arrow-right">
-                                <a  href="#">Familiares <i class="fas fa-arrow-right"></i></a>
+                                <a  href="http://agenciacardeal.com.br/rokiteste/para-familiares/">Familiares <i class="fas fa-arrow-right"></i></a>
                                 <div class="mp-level">
                                     
                                     <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
                                     <ul>
-                                        <li><a href="#">Para Familiares</a></li>
-                                        <li><a href="#">Guia</a></li>
-                                        <li><a href="#">Relatos</a></li>
-                                        <li><a href="#">Para saber mais</a></li>                                      
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/para-familiares/">Para Familiares</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/guia-para-familiares/">Guia</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/relatos-familiares/">Relatos</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/para-saber-mais-familiares/">Para saber mais</a></li>                                      
                                     </ul>
                                 
                                 </div>
                             </li>
                             <li class="icon icon-arrow-right">
-                                <a  href="#">Profissionais de Saúde <i class="fas fa-arrow-right"></i></a>
+                                <a href="http://agenciacardeal.com.br/rokiteste/para-profissionais-da-saude/">Profissionais de Saúde <i class="fas fa-arrow-right"></i></a>
                                 <div class="mp-level">
                                     <a class="mp-back" href="#"><i class="fas fa-arrow-left"></i> voltar </a>
                                     <ul>
-                                        <li><a href="#">Para profissionais de saúde</a></li>
-                                        <li><a href="#">Guia</a></li>
-                                        <li><a href="#">Instituições e profissionais</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/para-profissionais-da-saude/">Para profissionais de saúde</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/guia-para-profissionais-da-saude/">Guia</a></li>
+                                        <li><a href="http://agenciacardeal.com.br/rokiteste/instituicoes-e-profissionais-parceiros/">Instituições e profissionais</a></li>
                                                                         
                                     </ul>
                                 </div>
                             </li>
 
-                            <li><a  href="#">Fale Conosco</a></li>
+                            <li><a href="http://agenciacardeal.com.br/rokiteste/fale-conosco/">Fale Conosco</a></li>
                         </ul>
                             
                     </div>

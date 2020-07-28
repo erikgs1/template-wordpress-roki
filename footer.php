@@ -25,9 +25,9 @@
             </div>
         </div>
     </footer>
-    <script src="app/responsive-menu/js/classie.js"></script>
-	<script src="app/responsive-menu/js/mlpushmenu.js"></script>
-    <script src="dist/all.js?cb=1595453396632"></script>
+    <script src="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/js/classie.js"></script>
+	<script src="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/js/mlpushmenu.js"></script>
+    <script src="http://agenciacardeal.com.br/roki-assets/all.js?cb=1595453396632"></script>
 	
 	<script>
 		new mlPushMenu( document.getElementById( 'mp-menu' ), document.querySelector( '.menu-act' ), {

@@ -26,7 +26,7 @@ Template Name: Artigos
                         <div class="page-title">
                             <h1><?php $title = get_field('nome_da_pagina'); echo $title; ?></h1>
                         </div>  
-                        <div class="">
+                        <div>
                             <div class="mt-4 mb-4">
                                 <?php 
                                     $description = get_field('modelob_descricao');
@@ -38,7 +38,7 @@ Template Name: Artigos
                                     if( have_rows('modelob_list') ):
                                         while ( have_rows('modelob_list') ) : the_row();
                                             $nome1 = get_sub_field('nome');
-                                            echo '<div class="mb-3">';
+                                            echo '<div class="mb-4">';
                                             echo ' <h6 class="mb-0"> ' . $nome1 . '</h6>';
                                             if( have_rows('link_repeater') ):
                                                 while ( have_rows('link_repeater') ) : the_row();

@@ -1,4 +1,4 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../bootstrap/scss/bootstrap.scss";
 @import "variables";
 @import "colors";
 @import "typography";
@@ -32,8 +32,9 @@ main{
         background-image: url(../images/roki-home-agenda.jpg);
         margin-top: 30px;
         background-repeat: no-repeat;
-        background-size: contain;
-        padding: 4.3rem 3rem 3rem 1.5rem;
+        background-size: 100%;
+        background-position: bottom;
+        padding: 0 3rem 3rem 1.5rem;
         @media #{$mq-1000-down}{
             background-size: cover;
             padding: 1rem 1rem 2rem;
@@ -56,7 +57,7 @@ main{
     }
 }
 .main-background{
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 3rem;
     @media #{$mq-620-down}{
@@ -107,5 +108,14 @@ main{
     }
     p{
         margin-bottom: 0;        
+    }
+}
+.separador-relatos{
+    margin-bottom: 2rem;
+    p{
+        display: inline;
+    }
+    .aspas{
+        color: $black;
     }
 }

@@ -10,48 +10,59 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-<main>
+<main class="home">
+    <?php 
+        $bannerImg = get_field('imagem_de_fundo_home');
+        $fraseBanner = get_field('frase_banner_home');
+        $fraseBannerDestaque = get_field('frase_banner_home_destaque');
+    ?>
     <!-- div 1 - Background -->
     <div  class="main-background desktop">
-        <img class="img-fluid" src="" alt="">
+        <img class="img-fluid" src="<?php echo $bannerImg; ?>" alt="">
         <div class="absolute-text">
             <div class="container">
                 <div class="main-txt pt-5">
                     <p>
-                        
+                        <?php echo $fraseBanner; ?>
                     </p>
                 </div>
                 <div class="main-title">
-                    <h2></h2>
+                    <h2>
+                        <?php echo $fraseBannerDestaque; ?>
+                    </h2>
                 </div>
             </div>
         </div>
     </div>
-    <div  class="main-background mobile" style="background-image: url(images/background-roki.jpg);">
+    <div  class="main-background mobile" style="background-image: url(<?php echo $bannerImg; ?>);">
         <img class="img-fluid" src="images/background-roki.jpg" alt="">
         <div>
             <div class="container">
                 <div class="main-txt pt-5">
                     <p>
-                        O Instituto Roki foi criado para acolher mulheres com Síndrome
-                        de Rokitansky, e seus familiares, compartilhando vivências e
-                        informações sempre atualizadas, em parceria com profissionais
-                        da área da saúde. Entendemos os processos e as emoções
-                        envolvidas nessa jornada
+                        <?php echo $fraseBanner; ?>
                     </p>
                 </div>
                 <div class="main-title">
-                    <h2>Nosso compromisso é acolher e ajudar vocês!</h2>
+                    <h2>
+                        <?php echo $fraseBannerDestaque; ?>
+                    </h2>
                 </div>
             </div>
         </div>
     </div>
         <!-- // div 1 - Background -->
+    <?php
+        $tituloDoAside = get_field('titulo_do_aside');
+        $descricaoDoAside = get_field('descricao_do_aside');
+    ?>
     <div>
         <div class="container"> 
             <div class="row">
                 <div class=" col-md-4 p-0-620">
-                    <div class="main-aside">
+               
+               
+                <div class="main-aside">
                         <div class="aside-title paddingo-b-aside">
                             <h4 class="head-4-2 mb-0">Conversas com<br> 
                                 profissionais</h4>
@@ -62,78 +73,96 @@ Template Name: Home
                                 instagram do Instituto Roki.
                             </p>
                         </div>
-                        <div class="paddingo-b-aside">
-                            <h4 class="mb-0 head-4-3">15 de junho de 2020, às 19h</h4>
-                            <span class="a-ltvine" >Live no Instagram <a href="#"> @institutoroki</a></span>
-                            <p class="p-lt">
-                                Vamos conversar com quem
-                                tem experiência no tratamento
-                                da Síndrome de Rokitansky
-                            </p>
-                            <h6 class="c-ltvine">
-                                Entrevista com:</br>
-                                Dra Claudia Takano, médica ginecologista
-                            </h6>
-                        </div>
-                        <div class="paddingo-b-aside">
-                            <h4 class="mb-0 head-4-3">15 de junho de 2020, às 19h</h4>
-                            <span class="a-ltvine" >Live no Instagram <a href="#"> @institutoroki</a></span>
-                            <p class="p-lt">
-                                A terapia como ferramenta<br>
-                                de apoio e fortalecimento<br>
-                                para as mulheres com<br>
-                                Síndrome de Rokitansky 
-                            </p>
-                            <h6 class="c-ltvine">
-                                Entrevista com:</br>
-                                Daniella Bauer, psicóloga e psicanalista
-                            </h6>
-                        </div>
+                      
+                      
+                            <?php 
+                                $query = new WP_Query( array( 'post_type'       => 'evento',
+                                'posts_per_page'  => 2,
+                                'orderby'         => 'date',
+                                'order'           => 'DESC' ) );
+                            ?>
+
+
+                            <div class="paddingo-b-aside">
+                                <?php while( $query->have_posts() ) : $query->the_post(); ?>
+                                <?php 
+                                    $titulo = get_field('nome_do_evento');
+                                    $entrevistado = get_field('entrevistado');
+                                    $data = get_field('data');
+                                ?>  
+
+                                <h4 class="mb-0 head-4-3"><?php echo $data ?></h4>
+                                <?php 
+                                    if( have_rows('rede_social') ):
+                                    while ( have_rows('rede_social') ) : the_row();
+                                    $local = get_sub_field('local-1');
+                                    $perfil = get_sub_field('perfil');
+                                    $link = get_sub_field('link');
+                                    endwhile;
+                                    echo '<span class="a-ltvine">' . $local . ' <a href="'. $link .'">' . $perfil . '</a></span>';
+                                    else :
+                                    endif;
+                                ?>                         
+                                <p class="p-lt">
+                                 <?php echo $titulo ?>
+                                </p>
+                                <h6 class="c-ltvine">
+                                    Entrevista com:<br>
+                                <?php echo $entrevistado?>
+                                </h6>
+
+
+                                <?php endwhile; wp_reset_postdata(); ?>	
+                            </div>
+                        <!-- /paddingo-b-aside -->
+        
                         <div class="paddingo-b-aside">
                             <div class="aside-link">
-                                <span >Confira os próximos eventos e os
-                                eventos anteriores, clicando <a href="#" class="a_">aqui</a></span>  
+                                <span>
+                                    <?php
+                                        $footer = get_field('footer-1'); 
+                                        echo $footer 
+                                    ?>
+                                </span>
                             </div>
                         </div>
                     </div>
+            
+                    
                 </div>
+                <!-- /main-aside -->
+
+                <?php 
+                    $mulheresTitulo1 = get_field('home_para_mulheres_titulo_1');
+                    $mulheresDescricao1 = get_field('home_para_mulheres_descricao_1');
+                    
+                    $mulheresTitulo2 = get_field('home_para_mulheres_titulo_2');
+                    $mulheresDescricao2 = get_field('home_para_mulheres_descricao_2');
+                    
+                    $mulheresTitulo3 = get_field('home_para_mulheres_titulo_3');
+                    $mulheresDescricao3 = get_field('home_para_mulheres_descricao_3');
+                ?>
                 <div class="col-md-8 main-content" >
                     <div class="main-content-text main-content-mancha-1">
                         <span class="dn620"></span>
-                        <h4>Para mulheres</h4>
+                        <h4><?php echo $mulheresTitulo1 ?></h4>
                         <p>
-                            Receber o diagnóstico de Síndrome de Rokitansky é sentir o mundo desmoronar.
-                            É uma tristeza imensa, uma dor difícil de traduzir em palavras e além de tudo isso,
-                            muitas dúvidas, e outros sentimentos intensos. Ter algumas respostas para as suas
-                            questões e compartilhar histórias de outras mulheres que estão passando pelo
-                            mesmo que você, pode trazer a força que você precisa.
-                            Nós estamos aqui para te apoiar e acolher!
+                            <?php echo $mulheresDescricao1 ?>
                         </p>
                     </div>
                     <div class=" main-content-text main-content-mancha-2">
                         <span class="dn620"></span>
-                        <h4>Para familiares</h4>
+                        <h4><?php echo $mulheresTitulo2 ?></h4>
                         <p>
-                            Saber que sua filha possui Síndrome de Rokitansky traz aos pais, uma tristeza
-                            imensa de ver tanta dor em sua filha. Muitas questões e dúvidas do que fazer e
-                            por onde começar, um mundo de inseguranças passa a fazer parte do dia a dia.
-                            Além da preocupação psicológica, em como ela está lidando com essa nova
-                            situação, muitos pais se perguntam como poderão ajudá-la nas questões médicas.
-                            Ter acesso às informações, indicações de médicos e histórias de outras famílias,
-                            poderá trazer mais tranquilidade para vocês nessa jornada.
-                            Nós estamos aqui para te ajudar e acolher!
+                            <?php echo $mulheresDescricao2 ?>
                         </p>
 
                     </div>
                     <div  class="main-content-text main-content-mancha-3">
                         <span class="dn620"></span>
-                        <h4>Para profissionais da saúde</h4>
+                        <h4><?php echo $mulheresTitulo3 ?></h4>
                         <p class="mb-0"> <!-- Margin Bottom Zero-->
-                            Ao atender uma mulher com Síndrome de Rokitansky nos diversos desafios é
-                            preciso ter conhecimento, fornecer informações atualizadas e esclarecer as
-                            dúvidas. A presença de profissionais de saúde preparados e capazes de acolhê-la,
-                            certamente levará aos melhores resultados.
-                            Nós estamos aqui para contribuir com esse processo!
+                            <?php echo $mulheresDescricao3 ?>
                         </p>
                     </div> 
                 </div>

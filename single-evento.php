@@ -1,9 +1,3 @@
-<?php
-/**
- * Template Name: Eventos
- *
- */
-?>
 
 <?php get_header(); ?>
 <?php 
