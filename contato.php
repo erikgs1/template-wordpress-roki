@@ -2,7 +2,7 @@
 
 /*
 
-Template Name: Contato
+Template Name: Contatos
 
 */
 
