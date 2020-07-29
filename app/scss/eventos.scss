@@ -20,34 +20,36 @@
                 margin-top: 10px !important;
             }
         }
-        .box-event, .box-event-2{
-            width: 236px;
-            min-height: 236px;
-            background-size: cover;
-            padding: 4rem 1rem 1rem 1.5rem;
-            color: $dkvine;
-            line-height: 1.3;
-            font-weight: 500;
-            background-size: cover;
-            background-position: right;
-            background-repeat: no-repeat;
-            .title{
-                font-size: 0.8rem;
+        .linha-0, .linha-1{
+            .box-event, .box-event-2{
+                width: 236px;
+                min-height: 236px;
+                background-size: cover;
+                padding: 4rem 1rem 2rem 1.5rem;
+                color: $dkvine;
                 line-height: 1.3;
-            }
-            .hour{
-                font-size: 0.9rem;
-                color: $ltvine;
-            }
-            p{
-                margin-bottom: 0rem;
-                font-size: 0.5rem;
-            }
-            h6{
-                font-weight: bold;
-                font-size: .5rem;
-                margin-bottom: 0;
-                margin-top: 1.5rem;
+                font-weight: 500;
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+                .title{
+                    font-size: 0.8rem;
+                    line-height: 1.3;
+                }
+                .hour{
+                    font-size: 0.9rem;
+                    color: $ltvine;
+                }
+                p{
+                    margin-bottom: 0rem;
+                    font-size: 0.5rem;
+                }
+                h6{
+                    font-weight: bold;
+                    font-size: .5rem;
+                    margin-bottom: 0;
+                    margin-top: 1.5rem;
+                }
             }
             .box-pic{
                 position: relative;
@@ -56,6 +58,12 @@
                     width: 75px;
                     left: -30px;
                     top: 10px;
+                }
+            }
+        }
+        .linha-0{
+            .box-pic{
+                img{
                     -moz-transform: rotate(-2.5deg);
                     -webkit-transform: rotate(-2.5deg);
                     -o-transform: rotate(-2.5deg);
@@ -64,4 +72,16 @@
                 }
             }
         }
+        .linha-1{
+            .box-pic{
+                img{
+                    -moz-transform: rotate(2.5deg);
+                    -webkit-transform: rotate(2.5deg);
+                    -o-transform: rotate(2.5deg);
+                    -ms-transform: rotate(2.5deg);
+                    transform: rotate(2.5deg);
+                }
+            }
+        }
+        
     }

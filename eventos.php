@@ -43,6 +43,7 @@ Template Name: Eventos
                     <div class="main-content-text mt-5">                            
                         <h4 class="h6 event-border-b mb-4" >PRÓXIMOS EVENTOS</h4> 
                         <?php 
+                        $count = 0;
                         $query = new WP_Query( array( 'post_type'       => 'evento',
                         'posts_per_page'  => 2,
                         'orderby'         => 'date',
@@ -65,9 +66,8 @@ Template Name: Eventos
                         else :
                         endif;
                     ?>                            
-                         <!-- Event 1 -->
-                        <div class="row align-items-center mt-4">
-                        
+                         <!-- Event -->
+                        <div class="row align-items-center mt-4 linha-<?php echo $count ?>">
                             <!-- Box event -->
                             <div class=" col-md-4">
                                 <div class="box-event mb-3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/box-evento.jpg');">
@@ -124,10 +124,11 @@ Template Name: Eventos
                             </div>
                              <!-- // Title right -->
                         </div>
+                        <?php $count++ ?>
                         <?php endwhile; wp_reset_postdata(); ?>	
                     
                     
-                        <!-- // Event 1 -->
+                        <!-- // Event -->
                         <h4 class="h6 event-border-b mt-4" >EVENTOS REALIZADOS</h4>
                         <?php 
                             $query2 = new WP_Query( array( 'post_type'       => 'evento',
