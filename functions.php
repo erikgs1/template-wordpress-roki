@@ -152,4 +152,26 @@ function register_cpt_evento() {
   ));
 }
 add_action('init', 'register_cpt_evento');
+
+add_action( 'admin_menu', 'remove_links_menu' );
+function remove_links_menu() {
+	remove_menu_page('edit.php'); // Posts
+	remove_menu_page('edit-comments.php'); // Comentários
+	// remove_menu_page('index.php'); // Painel
+	// remove_menu_page('upload.php'); // Media
+	// remove_menu_page('link-manager.php'); // Links
+	// remove_menu_page('edit.php?post_type=page'); // Paginas
+	// remove_menu_page('themes.php'); // Aparência
+	// remove_menu_page('plugins.php'); // Plugins
+	// remove_menu_page('users.php'); // Usuários
+	// remove_menu_page('tools.php'); // Ferramentas
+	// remove_menu_page('options-general.php'); // Configurações
+}
+
+function limit_words($string, $word_limit) {  
+	$words = explode(' ', $string, ($word_limit + 1));  
+	if(count($words) > $word_limit) { array_pop($words); array_push($words, "..."); }  
+	return implode(' ', $words);
+}
+
 ?>

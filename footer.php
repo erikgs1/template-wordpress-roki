@@ -22,18 +22,12 @@
                             dynamic_sidebar( 'footer-3' );
                         }
                     ?>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/js/classie.js"></script>
-	<script src="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/js/mlpushmenu.js"></script>
-    <script src="http://agenciacardeal.com.br/roki-assets/all.js?cb=1595453396632"></script>
-	
-	<script>
-		new mlPushMenu( document.getElementById( 'mp-menu' ), document.querySelector( '.menu-act' ), {
-			type : 'cover'
-		} );
-	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/dist/all.js?cb=1595453396632"></script>
 <?php wp_footer(); ?>	
 </body>
 </html>

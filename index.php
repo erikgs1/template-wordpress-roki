@@ -3,8 +3,17 @@
     $thumb_id = get_post_thumbnail_id();
     $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
     $thumb_url = $thumb_url_array[0];
+    if($thumb_id){
+    ?>
+        <main class="main-background" style="background-image:url(<?php echo $thumb_url ?>)">
+    <?php 
+    }
+    else{
+    ?>
+      <main class="main-background" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/roki-fundo.jpg)">
+      <?php
+    }
 ?>
-<main class="main-background" style="background-image:url(<?php echo $thumb_url ?>)">
         <div class="container"> 
             <div class="row">
                 <!-- Espaço em branco background -->

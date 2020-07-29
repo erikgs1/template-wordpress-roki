@@ -34,13 +34,41 @@ Template Name: Relatos
                                 ?>
                             </div>
                             <div> 
+                                
                                 <?php 
                                     if( have_rows('modelod_repeater') ):
                                         while ( have_rows('modelod_repeater') ) : the_row();
-                                        echo '<div  class="separador-relatos"> <span class="aspas">"</span>';    
                                         $relato = get_sub_field('relato');
-                                        echo  $relato;                                            
-                                        echo '<span class="aspas">"</span></div>';
+                                ?>
+                                        <div  class="separador-relatos">
+                                            <!--- Texto reduzido -->
+                                            <div class="texto-reduzido">
+                                                <span class="aspas">"</span>
+                                                <?php echo(limit_words($relato,80)); ?>
+                                                <span class="aspas">"</span>
+                                                <div>
+                                                    <a href="#" class="read-more">Leia mais</a>
+                                                </div>
+                                            </div>  
+
+                                            <!--- //Texto reduzido -->
+
+                                            
+                                            <!--- Texto Completo -->
+                                            <div class="texto-completo">
+                                                <span class="aspas">"</span>
+                                                <?php echo $relato ?>
+                                                <span class="aspas">"</span>
+                                                <div>
+                                                    <a href="#" class="read-more">Ocultar</a>
+                                                </div>
+                                            </div>  
+
+                                            <!--- // Texto Completo -->
+                                            
+                                              
+                                        </div>
+                                <?php
                                         endwhile;
                                     else :
                                     endif;

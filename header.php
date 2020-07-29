@@ -9,11 +9,10 @@
     <meta name="theme-color" content="#ba4547" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ba4547">
     <title>Instituto Roki</title>
-    <link rel="stylesheet" type="text/css" href="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/css/icons.css" />
-	<link rel="stylesheet" type="text/css" href="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
-	<link rel="stylesheet" type="text/css" href="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/css/component.min.css" />
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="http://agenciacardeal.com.br/roki-assets/app/responsive-menu/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/css/component.min.css" />
+    <script src="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/js/modernizr.custom.js"></script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
