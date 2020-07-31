@@ -50,7 +50,7 @@ Template Name: Contatos
                 </div>
                 <!-- // Espaço em branco background -->
                 <!-- Conteudo -->
-                <div class=" col-md-8 pl-5 form">
+                <div class=" col-md-8 form">
                     <div>
                         <div class="page-title">
                             <h1>Fale Conosco</h1>
@@ -65,7 +65,7 @@ Template Name: Contatos
                         <h4>Mande uma mensagem para a gente!</h4>
                         <div class="col-md-8 p-0 pt-2" >
                             <form>
-                                <?php echo do_shortcode('[contact-form-7 id="190" title="Formulário de contato"]'); ?>
+                                <?php echo do_shortcode('[contact-form-7 id="379" title="Formulário de contato"]'); ?>
                             </form>
                         </div>
                     </div>

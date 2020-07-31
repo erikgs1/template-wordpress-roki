@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/css/icons.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/fontawesome-free-5.14.0-web/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/css/component.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/app/responsive-menu/js/modernizr.custom.js"></script>
     <?php wp_head(); ?>
 </head>

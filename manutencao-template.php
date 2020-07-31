@@ -139,8 +139,8 @@ min-height: 600px">
             </div>
                 <nav class="nav">
                     <ul>
-                        <li class="pipe"><a href="<?php echo get_template_directory_uri(); ?>/manutencao/guia-para-familiares-instituto-roki.pdf" target="_blank">Mulheres portadoras</a> </li>
-                        <li class="pipe"><a href="<?php echo get_template_directory_uri(); ?>/manutencao/guia-para-mulheres-instituto-roki.pdf" target="_blank">Familiares</a> </li>
+                        <li class="pipe"><a href="<?php echo get_template_directory_uri(); ?>/manutencao/guia-para-mulheres-instituto-roki.pdf" target="_blank">Mulheres portadoras</a> </li>
+                        <li class="pipe"><a href="<?php echo get_template_directory_uri(); ?>/manutencao/guia-para-familiares-instituto-roki.pdf" target="_blank">Familiares</a> </li>
                         <li><a href="<?php echo get_template_directory_uri(); ?>/manutencao/guia-para-profissionais-da-saude-instituto-roki.pdf" target="_blank">Profissionais de saúde</a> </li>
                     </ul>
                 </nav>

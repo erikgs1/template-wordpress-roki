@@ -59,10 +59,10 @@ Template Name: Home
     <div>
         <div class="container"> 
             <div class="row">
-                <div class=" col-md-4 p-0-620">
+                <div class=" col-md-4 p-0-620 pt-1">
                
                
-                <div class="main-aside">
+                <div class="main-aside mt-0 mt-3">
                         <div class="aside-title paddingo-b-aside">
                             <h4 class="head-4-2 mb-0">Conversas com<br> 
                                 profissionais</h4>
@@ -89,9 +89,8 @@ Template Name: Home
                                     $titulo = get_field('nome_do_evento');
                                     $entrevistado = get_field('entrevistado');
                                     $data = get_field('data');
+                                    $profissao = get_field('profissao');
                                 ?>  
-
-                                <h4 class="mb-0 head-4-3"><?php echo $data ?></h4>
                                 <?php 
                                     if( have_rows('rede_social') ):
                                     while ( have_rows('rede_social') ) : the_row();
@@ -103,12 +102,13 @@ Template Name: Home
                                     else :
                                     endif;
                                 ?>                         
-                                <p class="p-lt">
+                                <p class="p-lt mb-0 mt-3 line-1-2">
                                  <?php echo $titulo ?>
                                 </p>
-                                <h6 class="c-ltvine">
-                                    Entrevista com:<br>
-                                <?php echo $entrevistado?>
+                                <h6 class="c-dkvine mb-3">
+                                    Com <?php echo $entrevistado?><br>
+                                    <?php echo $profissao ?>
+                                    
                                 </h6>
 
 
@@ -142,10 +142,10 @@ Template Name: Home
                     $mulheresTitulo3 = get_field('home_para_mulheres_titulo_3');
                     $mulheresDescricao3 = get_field('home_para_mulheres_descricao_3');
                 ?>
-                <div class="col-md-8 main-content" >
+                <div class="col-md-8 main-content mt-3" >
                     <div class="main-content-text main-content-mancha-1">
                         <span class="dn620"></span>
-                        <h4><?php echo $mulheresTitulo1 ?></h4>
+                        <h4 class="mt-3"><?php echo $mulheresTitulo1 ?></h4>
                         <p>
                             <?php echo $mulheresDescricao1 ?>
                         </p>

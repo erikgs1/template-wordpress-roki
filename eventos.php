@@ -84,7 +84,7 @@ Template Name: Eventos
                                                 </p>
                                                 <p>
                                                 <?php echo $local  ?> <br>
-                                                <?php echo $perfil  ?> 
+                                                <?php echo ' <a href="'. $link .'">' . $perfil . '</a></span>';  ?> 
                                                 </p>
                                             </div>
                                             <div>
@@ -161,7 +161,7 @@ Template Name: Eventos
                                 Entrevista com: <?php echo $entrevistado;?>
                             </p>
                             <p class="ps-2 p-lt w-100 mt-1">
-                                Realizado em <?php echo $data ?>, disponível nas <?php echo $local . ' ' . $perfil;?> 
+                                Realizado em <?php echo $data ?>, disponível nas <?php echo $local . ' ' . '<a href="'. $link .'">' . $perfil . '</a>';?> 
                             </p>
                         </div>
                     <?php endwhile; wp_reset_postdata(); ?>	

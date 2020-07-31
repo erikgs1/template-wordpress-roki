@@ -43,9 +43,9 @@ Template Name: Relatos
                                         <div  class="separador-relatos">
                                             <!--- Texto reduzido -->
                                             <div class="texto-reduzido">
-                                                <span class="aspas">"</span>
+                                                <span class="aspas m-n1">"</span>
                                                 <?php echo(limit_words($relato,80)); ?>
-                                                <span class="aspas">"</span>
+                                                <span class="aspas m-n1">"</span>
                                                 <div>
                                                     <a href="#" class="read-more">Leia mais</a>
                                                 </div>
@@ -56,9 +56,9 @@ Template Name: Relatos
                                             
                                             <!--- Texto Completo -->
                                             <div class="texto-completo">
-                                                <span class="aspas">"</span>
+                                                <span class="aspas m-n1">"</span>
                                                 <?php echo $relato ?>
-                                                <span class="aspas">"</span>
+                                                <span class="aspas m-n1">"</span>
                                                 <div>
                                                     <a href="#" class="read-more">Ocultar</a>
                                                 </div>

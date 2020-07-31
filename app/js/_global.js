@@ -11,8 +11,3 @@ app.global = {
 
 // Run the global stuff
 app.global.init();
-
-jQuery('.separador-relatos').find('.read-more').on('click', function(e){
-	e.preventDefault();
-	alert('oi');
-})

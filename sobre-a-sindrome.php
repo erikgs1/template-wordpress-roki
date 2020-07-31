@@ -23,7 +23,7 @@ Template Name: Sobre a Síndrome
                     </div>
                     <!-- // Espaço em branco background -->
 					<div class=" col-md-8">
-						<div class="main-content-text ml-0 mt-5 pt-5">
+						<div class="main-content-text ml-0">
                             <div class="page-title">
                                 <h1><?php echo the_title() ?></h1>
                             </div> 
