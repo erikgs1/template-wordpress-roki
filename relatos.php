@@ -65,7 +65,6 @@ Template Name: Relatos
                                             </div>  
 
                                             <!--- // Texto Completo -->
-                                            
                                               
                                         </div>
                                 <?php

@@ -109,7 +109,19 @@ main{
         margin-bottom: 0;        
     }
 }
+
 .separador-relatos{
+    .texto-completo{
+        display: none;
+    }
+    &.texto-expandido{
+        .texto-completo{
+            display: block;
+        }
+        .texto-reduzido{
+            display: none;
+        }
+    }
     margin-bottom: 2rem;
     p{
         display: inline;

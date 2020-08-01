@@ -45,7 +45,7 @@ Template Name: Eventos
                         <?php 
                         $count = 0;
                         $query = new WP_Query( array( 'post_type'       => 'evento',
-                        'posts_per_page'  => 2,
+                        'posts_per_page'  => 1,
                         'orderby'         => 'date',
                         'order'           => 'DESC' ) );
                     ?>
@@ -53,8 +53,10 @@ Template Name: Eventos
                     <?php 
                         $titulo = get_field('nome_do_evento');
                         $entrevistado = get_field('entrevistado');
+                        $profissao = get_field('profissao');
                         $data = get_field('data');
                         $foto = get_field('foto');
+                        $linkEvento = get_field('link_evento');
                     ?>  
                     <?php 
                         if( have_rows('rede_social') ):
@@ -72,9 +74,9 @@ Template Name: Eventos
                             <div class=" col-md-4">
                                 <div class="box-event mb-3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/box-evento.jpg');">
                                     <div>
-                                        <p class="title">
+                                        <a href="$linkEvento" target="_blank" class="title">
                                             <?php echo $titulo  ?> 
-                                        </p>
+                                        </a>
                                     </div>
                                     <div class="row">
                                         <div class="col-7">
@@ -91,9 +93,9 @@ Template Name: Eventos
                                                 <h6 class="ps dkvine">
                                                     <?php echo $entrevistado  ?> <br>
                                                 </h6>
-                                                <!-- <p>
-                                                    médica ginecologista
-                                                </p> -->
+                                                <p>
+                                                    <?php echo $profissao ?>
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="col-5">
@@ -114,11 +116,11 @@ Template Name: Eventos
                                         
                                  <?php echo '<span class="a-ltvine">' . $local . ' <a target="_blank"  href="'. $link .'">' . $perfil . '</a></span>'; ?>
                                     </p>
-                                    <p class="p-dk mb-0">
+                                    <a href="$linkEvento" target="_blank"  class="p-dk mb-0">
                                        <?php echo $titulo  ?> 
-                                    </p>
+                                    </a>
                                     <p class="ps dkvine">
-                                        Entrevista com: <?php echo $entrevistado?>
+                                        Entrevista com: <?php echo $entrevistado . ', ' . $profissao; ?> 
                                     </p>
                                 </div>
                             </div>
@@ -140,8 +142,10 @@ Template Name: Eventos
                         <?php 
                             $titulo = get_field('nome_do_evento');
                             $entrevistado = get_field('entrevistado');
+                            $profissao = get_field('profissao');
                             $data = get_field('data');
                             $foto = get_field('foto');
+                            $linkEvento = get_field('link_evento');
                         ?>  
                         <?php 
                             if( have_rows('rede_social') ):
@@ -154,11 +158,11 @@ Template Name: Eventos
                             endif;
                         ?>      
                         <div class="row align-items-center ml-1">
-                            <p class="p-dk mb-0 w-100">
+                            <a href="$linkEvento" target="_blank" class="p-dk mb-0 w-100">
                                 <?php echo $titulo; ?> 
-                            </p>
+                            </a>
                             <p class=" ps p-dk mb-0 w-100">
-                                Entrevista com: <?php echo $entrevistado;?>
+                                Entrevista com: <?php echo $entrevistado . ', ' . $profissao;?>
                             </p>
                             <p class="ps-2 p-lt w-100 mt-1">
                                 Realizado em <?php echo $data ?>, disponível nas <?php echo $local . ' ' . '<a target="_blank"  href="'. $link .'">' . $perfil . '</a>';?> 

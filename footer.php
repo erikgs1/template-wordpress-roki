@@ -27,7 +27,7 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/dist/all.js?cb=1595453396632"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/dist/all.js"></script>
 <?php wp_footer(); ?>	
 </body>
 </html>

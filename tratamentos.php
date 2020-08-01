@@ -13,7 +13,7 @@ Template Name: Tratamentos
     $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
     $thumb_url = $thumb_url_array[0];
 ?>
-<main class="main-background-not100" style="background-image:url(<?php echo $thumb_url ?>)">
+<main class="main-background-not100-2" style="background-image:url(<?php echo $thumb_url ?>)">
         <div class="container"> 
             <div class="row">
                 <div class=" col-md-4">

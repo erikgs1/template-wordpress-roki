@@ -47,7 +47,7 @@ Template Name: Saiba Mais
                                                     $link = get_sub_field('link');
                                                     echo '<a target="_blank"  href="' . $link .'" >';
                                                     echo $link;
-                                                    echo '</a>';
+                                                    echo '</a> <br>';
                                                 endwhile;
                                             else :
                                             endif;
@@ -73,7 +73,7 @@ Template Name: Saiba Mais
                                                         $link2 = get_sub_field('link');
                                                         echo '<a target="_blank"  href="' . $link2 .'" >';
                                                         echo $link2;
-                                                        echo '</a>';
+                                                        echo '</a> ';
                                                     endwhile;
                                                 else :
                                                 endif;

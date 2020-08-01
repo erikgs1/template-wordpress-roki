@@ -14,7 +14,21 @@
 }
 
 .main-background-not100{
-    background-position: top;
+    background-position: 50% -30%;
+    background-repeat: no-repeat;
+    background-size: unset;
+    @media #{$mq-620-down}{
+        background-size: cover;
+        background-position: center;
+    }
+    img{
+        @media #{$mq-620-down}{
+            width: 100%;
+        }
+    }
+}
+.main-background-not100-2{
+    background-position: 50% -10%;
     background-repeat: no-repeat;
     background-size: unset;
     @media #{$mq-620-down}{
