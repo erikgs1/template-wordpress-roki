@@ -30,11 +30,10 @@ main{
     }
     .main-aside{
         background-image: url(../images/roki-home-agenda.jpg);
-        margin-top: 30px;
-        background-repeat: no-repeat;
+        min-height: 780px;
         background-size: 100%;
-        background-position: bottom;
-        padding: 0 3rem 3rem 1.5rem;
+        background-position: top;
+        padding: 2px 3rem 3rem 1.5rem;
         @media #{$mq-1000-down}{
             background-size: cover;
             padding: 1rem 1rem 2rem;

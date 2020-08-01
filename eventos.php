@@ -84,7 +84,7 @@ Template Name: Eventos
                                                 </p>
                                                 <p>
                                                 <?php echo $local  ?> <br>
-                                                <?php echo ' <a href="'. $link .'">' . $perfil . '</a></span>';  ?> 
+                                                <?php echo ' <a target="_blank"  href="'. $link .'">' . $perfil . '</a></span>';  ?> 
                                                 </p>
                                             </div>
                                             <div>
@@ -112,7 +112,7 @@ Template Name: Eventos
                                     <p class="p-lt mb-0">
                                     <?php echo $data ?> <br>
                                         
-                                 <?php echo '<span class="a-ltvine">' . $local . ' <a href="'. $link .'">' . $perfil . '</a></span>'; ?>
+                                 <?php echo '<span class="a-ltvine">' . $local . ' <a target="_blank"  href="'. $link .'">' . $perfil . '</a></span>'; ?>
                                     </p>
                                     <p class="p-dk mb-0">
                                        <?php echo $titulo  ?> 
@@ -161,7 +161,7 @@ Template Name: Eventos
                                 Entrevista com: <?php echo $entrevistado;?>
                             </p>
                             <p class="ps-2 p-lt w-100 mt-1">
-                                Realizado em <?php echo $data ?>, disponível nas <?php echo $local . ' ' . '<a href="'. $link .'">' . $perfil . '</a>';?> 
+                                Realizado em <?php echo $data ?>, disponível nas <?php echo $local . ' ' . '<a target="_blank"  href="'. $link .'">' . $perfil . '</a>';?> 
                             </p>
                         </div>
                     <?php endwhile; wp_reset_postdata(); ?>	

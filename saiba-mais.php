@@ -45,7 +45,7 @@ Template Name: Saiba Mais
                                             if( have_rows('link_repeater') ):
                                                 while ( have_rows('link_repeater') ) : the_row();
                                                     $link = get_sub_field('link');
-                                                    echo '<a href="' . $link .'" >';
+                                                    echo '<a target="_blank"  href="' . $link .'" >';
                                                     echo $link;
                                                     echo '</a>';
                                                 endwhile;
@@ -71,7 +71,7 @@ Template Name: Saiba Mais
                                                 if( have_rows('link_repeater') ):
                                                     while ( have_rows('link_repeater') ) : the_row();
                                                         $link2 = get_sub_field('link');
-                                                        echo '<a href="' . $link2 .'" >';
+                                                        echo '<a target="_blank"  href="' . $link2 .'" >';
                                                         echo $link2;
                                                         echo '</a>';
                                                     endwhile;

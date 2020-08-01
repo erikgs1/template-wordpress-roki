@@ -43,7 +43,7 @@ Template Name: Artigos
                                             if( have_rows('link_repeater') ):
                                                 while ( have_rows('link_repeater') ) : the_row();
                                                     $link = get_sub_field('link');
-                                                    echo '<a class="ps" href="' . $link .'" >';
+                                                    echo '<a target="_blank"  class="ps" href="' . $link .'" >';
                                                     echo $link;
                                                     echo '</a>';
                                                 endwhile;
@@ -67,7 +67,7 @@ Template Name: Artigos
                                                 if( have_rows('link_repeater') ):
                                                     while ( have_rows('link_repeater') ) : the_row();
                                                         $link2 = get_sub_field('link');
-                                                        echo '<a class="ps"  href="' . $link2 .'" >';
+                                                        echo '<a target="_blank" class="ps"  href="' . $link2 .'" >';
                                                         echo $link2;
                                                         echo '</a>';
                                                     endwhile;

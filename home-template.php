@@ -59,12 +59,12 @@ Template Name: Home
     <div>
         <div class="container"> 
             <div class="row">
-                <div class=" col-md-4 p-0-620 pt-1">
+                <div class=" col-md-4 p-0-620">
                
                
-                <div class="main-aside mt-0 mt-3">
+                <div class="main-aside mt-5">
                         <div class="aside-title paddingo-b-aside">
-                            <h4 class="head-4-2 mb-0">Conversas com<br> 
+                            <h4 class="head-4-2 mt-0 mb-0">Conversas com<br> 
                                 profissionais</h4>
                             <p>
                                 Todo mês convidamos um profissional <br> 
@@ -90,6 +90,7 @@ Template Name: Home
                                     $entrevistado = get_field('entrevistado');
                                     $data = get_field('data');
                                     $profissao = get_field('profissao');
+                                    $linkEvento = get_field('link_evento');
                                 ?>  
                                 <?php 
                                     if( have_rows('rede_social') ):
@@ -98,14 +99,13 @@ Template Name: Home
                                     $perfil = get_sub_field('perfil');
                                     $link = get_sub_field('link');
                                     endwhile;
-                                    echo '<span class="a-ltvine">' . $local . ' <a href="'. $link .'">' . $perfil . '</a></span>';
-                                    else :
+                                     else :
                                     endif;
                                 ?>                         
-                                <p class="p-lt mb-0 mt-3 line-1-2">
+                                <a target="_blank"  href="<?php echo $linkEvento ?>" class="p-lt mb-0 mt-3 line-1-2">
                                  <?php echo $titulo ?>
-                                </p>
-                                <h6 class="c-dkvine mb-3">
+                                </a>
+                                <h6 class="c-dkvine mb-5">
                                     Com <?php echo $entrevistado?><br>
                                     <?php echo $profissao ?>
                                     
@@ -116,16 +116,6 @@ Template Name: Home
                             </div>
                         <!-- /paddingo-b-aside -->
         
-                        <div class="paddingo-b-aside">
-                            <div class="aside-link">
-                                <span>
-                                    <?php
-                                        $footer = get_field('footer-1'); 
-                                        echo $footer 
-                                    ?>
-                                </span>
-                            </div>
-                        </div>
                     </div>
             
                     
@@ -142,17 +132,17 @@ Template Name: Home
                     $mulheresTitulo3 = get_field('home_para_mulheres_titulo_3');
                     $mulheresDescricao3 = get_field('home_para_mulheres_descricao_3');
                 ?>
-                <div class="col-md-8 main-content mt-3" >
+                <div class="col-md-8 main-content" >
                     <div class="main-content-text main-content-mancha-1">
                         <span class="dn620"></span>
-                        <h4 class="mt-3"><?php echo $mulheresTitulo1 ?></h4>
+                        <h4 class="head-4-4 mt-3"><?php echo $mulheresTitulo1 ?></h4>
                         <p>
                             <?php echo $mulheresDescricao1 ?>
                         </p>
                     </div>
                     <div class=" main-content-text main-content-mancha-2">
                         <span class="dn620"></span>
-                        <h4><?php echo $mulheresTitulo2 ?></h4>
+                        <h4 class="head-4-4"><?php echo $mulheresTitulo2 ?></h4>
                         <p>
                             <?php echo $mulheresDescricao2 ?>
                         </p>
@@ -160,7 +150,7 @@ Template Name: Home
                     </div>
                     <div  class="main-content-text main-content-mancha-3">
                         <span class="dn620"></span>
-                        <h4><?php echo $mulheresTitulo3 ?></h4>
+                        <h4 class="head-4-4"><?php echo $mulheresTitulo3 ?></h4>
                         <p class="mb-0"> <!-- Margin Bottom Zero-->
                             <?php echo $mulheresDescricao3 ?>
                         </p>

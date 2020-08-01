@@ -35,16 +35,16 @@ Template Name: Contatos
                             <h4 class="head-4-5 txtwhite">Nossos contatos</h4>
                         </li>
                         <li>
-                            <a href="<?php echo $whatsappLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-whatsapp.jpg" alt="" class="mr-2"><?php echo $whatsapp ?></a>
+                            <a target="_blank"  href="<?php echo $whatsappLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-whatsapp.jpg" alt="" class="mr-2"><?php echo $whatsapp ?></a>
                         </li>
                         <li>
-                            <a href="<?php echo $facebookLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-facebook.jpg" alt="" class="mr-2"><?php echo $facebook2 ?></a>
+                            <a target="_blank"  href="<?php echo $facebookLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-facebook.jpg" alt="" class="mr-2"><?php echo $facebook2 ?></a>
                         </li>
                         <li>
-                            <a href="<?php echo $instagramLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-instagram.jpg" alt="" class="mr-2"><?php echo $instagram ?></a>
+                            <a target="_blank"  href="<?php echo $instagramLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-instagram.jpg" alt="" class="mr-2"><?php echo $instagram ?></a>
                         </li>
                         <li>
-                            <a href="mailto:<?php echo $emailLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-email.jpg" alt="" class="mr-2"><?php echo $email ?></a>
+                            <a target="_blank"  href="mailto:<?php echo $emailLink ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-email.jpg" alt="" class="mr-2"><?php echo $email ?></a>
                         </li>
                     </ul>
                 </div>

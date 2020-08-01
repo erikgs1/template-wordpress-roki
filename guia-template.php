@@ -22,7 +22,7 @@ Template Name: Guia
                         <?php 
                             $link = get_field('modeloc_link');
                         ?>
-                        <a href="<?php echo  $link; ?>" class="d-block">
+                        <a target="_blank"  href="<?php echo  $link; ?>" class="d-block">
                             <?php 
                                 $image = get_field('modeloc_imagem');
                                 if( !empty( $image ) ): ?>
