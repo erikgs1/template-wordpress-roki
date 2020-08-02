@@ -77,7 +77,7 @@ Template Name: Home
                       
                             <?php 
                                 $query = new WP_Query( array( 'post_type'       => 'evento',
-                                'posts_per_page'  => 2,
+                                'posts_per_page'  => 3,
                                 'orderby'         => 'date',
                                 'order'           => 'DESC' ) );
                             ?>
@@ -105,7 +105,7 @@ Template Name: Home
                                 <a target="_blank"  href="<?php echo $linkEvento ?>" class="p-lt mb-0 mt-3 line-1-2">
                                  <?php echo $titulo ?>
                                 </a>
-                                <h6 class="c-dkvine mb-5">
+                                <h6 class="c-dkvine mb-5 mt-2">
                                     Com <?php echo $entrevistado?><br>
                                     <?php echo $profissao ?>
                                     
