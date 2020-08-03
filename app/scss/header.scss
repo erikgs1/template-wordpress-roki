@@ -34,11 +34,12 @@ header{
             }
         }
     }
-    .pipe::after{
+    .pipe:after{
         content: "";
         width: 1px;
         height: 10px;
         top: 12px;
+        right: 0;
         position: absolute;
         background-color: $dkvine;
     }
