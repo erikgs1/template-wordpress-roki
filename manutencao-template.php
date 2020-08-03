@@ -96,7 +96,7 @@ Template Name: Manutenção
 }
     </style>
 </head>
-<body style="background-image: url(http://localhost/roki-beta/wp-content/uploads/2020/07/background-roki.png);
+<body style="background-image: url(http://institutoroki.com.br/wp-content/uploads/2020/07/background-roki.png);
 background-repeat: no-repeat;
 background-position: 50% 140px;
 background-size: cover;

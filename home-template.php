@@ -66,7 +66,7 @@ Template Name: Home
                         <div class="aside-title paddingo-b-aside">
                             <h4 class="head-4-2 mt-0 mb-0">Conversas com<br> 
                                 profissionais</h4>
-                            <p>
+                            <p class="mb-5">
                                 Todo mês convidamos um profissional <br> 
                                 para conversar sobre a jornada <br> 
                                 Rokitansky. Acompanhe e assista pelo <br> 
@@ -79,7 +79,7 @@ Template Name: Home
                                 $query = new WP_Query( array( 'post_type'       => 'evento',
                                 'posts_per_page'  => 3,
                                 'orderby'         => 'date',
-                                'order'           => 'DESC' ) );
+                                'order'           => 'ASC' ) );
                             ?>
 
 
