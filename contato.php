@@ -65,7 +65,7 @@ Template Name: Contatos
                         <h4>Mande uma mensagem para a gente!</h4>
                         <div class="col-md-8 p-0 pt-2" >
                             <form>
-                                <?php echo do_shortcode('[contact-form-7 id="379" title="Formulário de contato"]'); ?>
+                                <?php echo do_shortcode('[ninja_form id="1"]'); ?>
                             </form>
                         </div>
                     </div>

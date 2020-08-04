@@ -79,9 +79,9 @@ Template Name: Eventos
                             <div class=" col-md-4">
                                 <div class="box-event mb-3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/box-evento.jpg');">
                                     <div>
-                                        <a href="<?php echo $linkEvento ?>" target="_blank" class="title">
+                                        <p  class="title">
                                             <?php echo $titulo  ?> 
-                                        </a>
+                                        </p>
                                     </div>
                                     <div class="row">
                                         <div class="col-7">
@@ -197,7 +197,7 @@ Template Name: Eventos
                                 Entrevista com: <?php echo $entrevistado . ', ' . $profissao;?>
                             </p>
                             <p class="ps-2 p-lt w-100 mt-1">
-                                Realizado em <?php echo $data ?>, disponível nas <?php echo $local . ' ' . '<a target="_blank"  href="'. $link .'">' . $perfil . '</a>';?> 
+                                Realizado em <?php echo $data ?>, disponível <?php echo $local . ' ' . '<a target="_blank"  href="'. $link .'">' . $perfil . '</a>';?> 
                             </p>
                         </div>
                     <?php endwhile; wp_reset_postdata(); ?>	

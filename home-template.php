@@ -21,7 +21,7 @@ Template Name: Home
         <img class="img-fluid" src="<?php echo $bannerImg; ?>" alt="">
         <div class="absolute-text">
             <div class="container">
-                <div class="main-txt pt-5">
+                <div class="main-txt pt-0 pt-xl-5">
                     <p>
                         <?php echo $fraseBanner; ?>
                     </p>
