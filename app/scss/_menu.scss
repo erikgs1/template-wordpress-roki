@@ -148,7 +148,7 @@
 //
 //
 .logo{
-  @media  (max-width: 991.98px) {
+  @media #{ $mq-1000-down } {
     text-align: center;
   }
 }
@@ -156,7 +156,7 @@
   display: none;
   margin-bottom: 20px;
   padding-left: 20px;
-  @media  (max-width: 991.98px) {
+  @media #{ $mq-1000-down } {
     display: block;
 
   }
@@ -179,7 +179,7 @@
         padding: 0;
         width: 100%;
       }
-      @media  (max-width: 991.98px) {
+      @media #{ $mq-1000-down } {
         
          background: #fff;
 
@@ -206,7 +206,7 @@
       }
       .icon:before {
         display: none;
-        @media  (max-width: 991.98px) {              
+        @media #{ $mq-1000-down } {              
           display: inline-block;
         }
       }
@@ -215,7 +215,7 @@
           float: left;
           position: relative;  
           width: 100%;
-          @media  (max-width: 991.98px) {
+          @media #{ $mq-1000-down } {
             width: 100%;
             display: block;
           }
@@ -228,11 +228,15 @@
               font-size: 12px;
               font-weight: 500;
               padding: 0 9px;
+              &:hover{
+                text-decoration: none;
+                color: $ltvine;
+              }
           }
 
           i {
             display: none;
-            @media  (max-width: 991.98px) {              
+            @media #{ $mq-1000-down } {              
               display: inline-block;
             }
           }
@@ -261,7 +265,7 @@
               position: absolute;
               z-index: 2;        
 
-              @media  (max-width: 991.98px) {
+              @media #{ $mq-1000-down } {
                 float: left;
                 position: relative;
                 top: 0;
@@ -409,8 +413,9 @@ body.menu-active {
   }
 }
 
+
 .mp-menu {
-  @media (min-width: 992px){    
+  @media #{ $mq-1000-up } {    
     display: none;
   }
   

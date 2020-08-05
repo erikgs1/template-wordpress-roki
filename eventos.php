@@ -79,9 +79,9 @@ Template Name: Eventos
                             <div class=" col-md-4">
                                 <div class="box-event mb-3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/box-evento.jpg');">
                                     <div>
-                                        <p  class="title">
+                                        <a href="<?php echo $linkEvento ?>" target="_blank" class="title">
                                             <?php echo $titulo  ?> 
-                                        </p>
+                                        </a>
                                     </div>
                                     <div class="row">
                                         <div class="col-7">
@@ -168,8 +168,7 @@ Template Name: Eventos
                             'posts_per_page'  => 10,
                             'orderby'         => 'date',
                             'order'           => 'DESC',
-                            'offset'          => '1',
-                        ));
+                            'offset'          => '1'));
                         ?>
                         <?php while( $query2->have_posts() ) : $query2->the_post(); ?>
                         <?php 
@@ -201,25 +200,7 @@ Template Name: Eventos
                                 Realizado em <?php echo $data ?>, disponível <?php echo $local . ' ' . '<a target="_blank"  href="'. $link .'">' . $perfil . '</a>';?> 
                             </p>
                         </div>
-                    <?php endwhile; wp_reset_postdata(); ?>
-                    <div class="pagination">
-                            <?php 
-                                echo paginate_links( array(
-                                    'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-                                    'total'        => $query2->max_num_pages,
-                                    'current'      => max( 1, get_query_var( 'paged' ) ),
-                                    'format'       => '?paged=%#%',
-                                    'show_all'     => false,
-                                    'type'         => 'plain',
-                                    'end_size'     => 2,
-                                    'mid_size'     => 1,
-                                    'prev_next'    => true,
-                                    'add_args'     => false,
-                                    'add_fragment' => '',
-                                    'next_text'    => sprintf( '%1$s <i></i>', __( ' Mais antigos', 'text-domain' ) ), 
-                                    'prev_text'    => sprintf( '<i></i> %1$s', __( ' Mais Recentes', 'text-domain' ) ),
-                                ) );
-                            ?>
+                    <?php endwhile; wp_reset_postdata(); ?>	
                     </div>
                 </div>
             </div>

@@ -17,7 +17,6 @@
 @import "header";
 @import "footer";
 @import "fale-conosco";
-@import "tablet-responsive";
 
 main{
     width: 100%;
@@ -34,8 +33,6 @@ main{
         min-height: 780px;
         background-size: 100%;
         background-position: top;
-        position: relative;
-        z-index: 2;
         padding: 2px 3rem 3rem 1.5rem;
         @media #{$mq-1000-down}{
             background-size: cover;
@@ -141,18 +138,5 @@ main{
         text-align: center;
         padding-top: 250px;
         color: $dkvine;
-    }
-}
-
-.pagination{
-    a, span{
-        display: none
-    }
-    .next{
-        text-align: right;
-    }
-    .next, .prev{
-        display: block;
-        width: 100%;
     }
 }
