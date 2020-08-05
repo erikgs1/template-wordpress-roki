@@ -143,3 +143,16 @@ main{
         color: $dkvine;
     }
 }
+
+.pagination{
+    a, span{
+        display: none
+    }
+    .next{
+        text-align: right;
+    }
+    .next, .prev{
+        display: block;
+        width: 100%;
+    }
+}
